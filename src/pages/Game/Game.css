@@ -1,0 +1,29 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-list-wrapper {
+    position: relative;
+}
+
+.game-list-nav-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.game-list-nav-wrapper * {
+    background-color: grey;
+    opacity: .5;
+}
+
+.game-list-nav-wrapper *:hover {
+    /* background-color: black; */
+    opacity: 1;
+
+}
+
