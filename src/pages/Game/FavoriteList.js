@@ -12,7 +12,6 @@ const FavoriteList = ({}) => {
     const [visible, setVisible] = useState(true);
     useEffect(() => {
         const timer = setTimeout(() => {
-            console.log('lllll');
             setVisible(true);
         }, 200);
         return () => clearTimeout(timer);

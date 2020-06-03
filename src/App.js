@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio';
 import Blog from './pages/Blog/Blog';
 import About from './pages/About/About';
 import Speedrun from './pages/Speedrun/Speedrun';
@@ -52,6 +53,7 @@ function App() {
           <Route exact path='/blog' component={Blog} />
           <Route exact path='/speedrun' component={Speedrun} />
           <Route exact path='/game' component={Game} />
+          <Route exact path='/portfolio' component={Portfolio} />
           {/* <Route exact path='/login' render={() => <Login isLoggedIn={isLoggedIn}/>} /> */}
           {/* <Route exact path='/signup' render={() => <Signup isLoggedIn={isLoggedIn}/>} /> */}
           <Route component={PageNotFound} />
