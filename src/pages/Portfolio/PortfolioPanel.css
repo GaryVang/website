@@ -1,0 +1,16 @@
+.portfolio-panel-container {
+    display: flex;
+    flex-direction: row;
+    width: 915.5916px;
+    height: 343.839px;
+}
+
+.portfolio-panel-img {
+    width: 100%;
+    object-fit: contain;
+    width: 600px;
+}
+
+.portfolio-info-container {
+    flex: 1;
+}

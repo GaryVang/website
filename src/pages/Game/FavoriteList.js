@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './FavoriteList.css';
 import Witcher3 from './Witcher3/Witcher3';
 import PokemonGS from './Pokemon/Pokemon';
-import ArrowForward from '@material-ui/icons/ArrowForwardIos';
-import ArrowBackward from '@material-ui/icons/ArrowBackIos';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 
@@ -16,12 +14,15 @@ const FavoriteList = ({}) => {
         }, 200);
         return () => clearTimeout(timer);
     }, [visible]);
-    const [gameList] = useState([<Witcher3/>, <PokemonGS/>]);
+    // const [gameList] = useState([<Witcher3/>, <PokemonGS/>]);
+    const [gameList] = useState([Witcher3, PokemonGS]);
     const [count, setCount] = useState(0);
     
 
     const renderGame = () => {
-        return gameList[count];
+        // return gameList[count];
+        let Component = gameList[count];
+        return <Component/>;
     }
 
     const handleLeftArrow = () => {
