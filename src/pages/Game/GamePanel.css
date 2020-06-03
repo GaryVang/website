@@ -1,15 +1,33 @@
 .game-panel-container {
-    width: 100%;
+    width: 915.5916px;
+    /* height: 343.839px; */
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     /* height: 90vh; */
 }
 
+.game-panel-top-wrapper {
+    width: 100%;
+    height: 343.839px;
+    display: inline-flex;
+    flex-direction: row;
+}
+
 .game-panel-img {
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
+    width: 600px;
     /* transition: opacity 10s;
     opacity: 1; */
+}
+
+.game-panel-info {
+    min-width: 315.5916px;
+    width: 315.5916px;
+    /* width: 100%; */
+    
+    /* overflow: hidden; */
 }
 
 .game-panel-title {

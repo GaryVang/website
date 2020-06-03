@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import './Game.css';
+import FavoriteList from './FavoriteList';
 import Witcher3 from './Witcher3/Witcher3';
 import PokemonGS from './Pokemon/Pokemon';
 import ArrowForward from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackward from '@material-ui/icons/ArrowBackIos';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+
 const Game = ({}) => {
     const [gameList] = useState([<Witcher3/>, <PokemonGS/>]);
     const [count, setCount] = useState(0);
 
     const renderList = () => {
-// return gameList[0];
         return gameList.map((component, index) => {
             return <React.Fragment key={index}>
                 { component }
@@ -40,17 +43,14 @@ const Game = ({}) => {
     return (
         <div className="game-container">
             <h2 className='game-header'>A List of My Favorite Video Games</h2>
-            {/* <Witcher3 />
-            <PokemonGS /> */}
-            {/* {renderList()} */}
-            <div className='game-list-wrapper'>
+            <FavoriteList />
+            {/* <div className='game-list-wrapper'>
                 {renderGame()}
                 <div className='game-list-nav-wrapper'>
-                    <ArrowBackward fontSize='large' onClick={handleLeftArrow}/>
-                    
-                    <ArrowForward fontSize='large' onClick={handleRightArrow}/> 
+                    <NavigateBeforeIcon fontSize='large' onClick={handleLeftArrow} />
+                    <NavigateNextIcon fontSize='large' onClick={handleRightArrow} />
                 </div>   
-            </div> 
+            </div>  */}
         </div>
     )
 };

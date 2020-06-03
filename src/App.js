@@ -17,7 +17,7 @@ import Footer from './pages/components/Footer/Footer';
 
 function App() {
 
-  const [darkTheme, setDarkTheme] = useState(false);
+  const [darkTheme, setDarkTheme] = useState(true);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const changeToLight = () => {

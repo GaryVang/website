@@ -1,0 +1,22 @@
+.favorite-container {
+
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.favorite-nav-arrow {
+    opacity: .3;
+    background-color: grey;
+}
+
+.favorite-nav-arrow:hover {
+    opacity: .8;
+}

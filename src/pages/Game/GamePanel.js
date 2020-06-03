@@ -6,9 +6,14 @@ const GamePanel = ({ image, title, description, message, style }) => {
 
     return (
         <div className='game-panel-container' style={style}>
-            <img src={image.src} alt={image.alt} className='game-panel-img' />
-            <h1 className='game-panel-title'>{title}</h1>
-            <h2 className='game-panel-description'>{description}</h2>
+            <div className='game-panel-top-wrapper'>
+                <img className='game-panel-img' src={image.src} alt={image.alt} />
+                <div className='game-panel-info'>
+                    <h1 className='game-panel-title'>{title}</h1>
+                    <h2 className='game-panel-description'>{description}</h2>
+                </div>
+            </div>
+            
             <h2 className='game-panel-msg'>{message}</h2>
         </div>
         // <div className="game-panel-container">

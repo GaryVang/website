@@ -1,9 +1,10 @@
 .game-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.game-list-wrapper {
+/* .game-list-wrapper {
     position: relative;
 }
 
@@ -22,8 +23,6 @@
 }
 
 .game-list-nav-wrapper *:hover {
-    /* background-color: black; */
     opacity: 1;
-
-}
+} */
 
