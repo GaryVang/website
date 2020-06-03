@@ -13,7 +13,6 @@ import Header from './pages/components/Header/Header';
 import Nav from './pages/components/Nav/Nav';
 import Logo from './pages/components/Logo/Logo';
 import Footer from './pages/components/Footer/Footer';
-// import { Switch } from '@material-ui/core';
 
 function App() {
 
@@ -27,10 +26,6 @@ function App() {
   const changeToDark = () => {
       setDarkTheme(true);
   };
-
-  // const renderContent = () => {
-  //   return (<Home></Home>);
-  // };
 
   const setTheme = () => {
     if(!darkTheme) {
@@ -62,7 +57,6 @@ function App() {
           <Route component={PageNotFound} />
         </Switch>
       </Router>
-      {/* {renderContent()} */}
       {setTheme()}
     </div>
   );
