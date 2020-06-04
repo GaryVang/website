@@ -65,7 +65,7 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
             <NavLink to='/signup' activeClassName='nav-active' className='nav-tab signup'>
                 Sign up
             </NavLink> */}
-            <Light onClick={changeToDark} onMouseEnter={onThemeHover} onMouseLeave={onThemeMouseLeave}/>
+            <Light className='theme-icon' onClick={changeToDark} onMouseEnter={onThemeHover} onMouseLeave={onThemeMouseLeave}/>
             {themeFocus ? <h4 className='theme-toggle-label-light'>Toggle Dark Theme</h4> 
             : null}
         </div> 
@@ -100,7 +100,7 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
             <NavLink to='/signup' activeClassName='nav-active' className='nav-tab signup'>
                 Sign up
             </NavLink> */}
-            <Dark onClick={changeToLight} onMouseEnter={onThemeHover} onMouseLeave={onThemeMouseLeave}/>
+            <Dark className='theme-icon' onClick={changeToLight} onMouseEnter={onThemeHover} onMouseLeave={onThemeMouseLeave}/>
             {themeFocus ? <h4 className='theme-toggle-label-dark'>Toggle Light Theme</h4> 
             : null}
         </div>
