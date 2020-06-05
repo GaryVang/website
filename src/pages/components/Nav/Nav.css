@@ -4,7 +4,16 @@
     justify-content: flex-end;
     cursor: default;
     align-items: center;
+    /* height: 48px; */
+    font-size: 1rem;
+
 }
+
+/* @media (max-width: 600px) {
+    .nav-container {
+        display: none;
+    }
+} */
 
 .nav-icon {
     /* display: flex;
@@ -33,6 +42,11 @@
     color: inherit;
     display: flex;
     align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /* flex: 1 1 50%; */
+    /* font-size: 1rem; */
+    /* height: 90%; */
 }
 
 .light {
@@ -65,7 +79,8 @@
 
 .theme-toggle-label-dark {
     position: absolute;
-    top: 15px;
+    /* top: 15px; */
+    top: 35px;
     opacity: .8;
     background-color: rgb(75, 75, 75);
     border: white 1px solid;
@@ -76,7 +91,9 @@
 
 .theme-toggle-label-light {
     position: absolute;
-    top: 15px;
+    /* top: 15px; */
+    /* top: 100px; */
+    top: 35px;
     opacity: .8;
     background-color: darkgrey;
     border: black 1px solid;
