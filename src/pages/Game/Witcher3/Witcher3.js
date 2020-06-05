@@ -15,8 +15,7 @@ const Witcher3 = ({}) => {
         backgroundColor: 'black',
         color: 'white',
         fontFamily: 'mason serif'
-    };
-    
+    };    
 
     return (
         <GamePanel
@@ -28,5 +27,19 @@ const Witcher3 = ({}) => {
         />
     );
 };
+
+let x = 0;
+
+const sayBye = () => {
+    x++;
+    alert(x);
+}
+
+const resetBye = () => {
+    x = 0;
+}
+
+export {sayBye};
+export {resetBye};
 
 export default Witcher3;

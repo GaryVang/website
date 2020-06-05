@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './FavoriteList.css';
 import Witcher3 from './Witcher3/Witcher3';
+// import * as sayBye from './Witcher3/Witcher3'; // Remove after tests
 import PokemonGS from './Pokemon/Pokemon';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
@@ -26,6 +27,7 @@ const FavoriteList = ({}) => {
     }
 
     const handleLeftArrow = () => {
+        // sayBye.sayBye();
         setVisible(false);
         setTimeout(() => {
             if(count-1 < 0) {
@@ -37,6 +39,7 @@ const FavoriteList = ({}) => {
     };
 
     const handleRightArrow = () => {
+        // sayBye.resetBye();
         setVisible(false);
         setTimeout(() => {
             if(count+1 === gameList.length){
