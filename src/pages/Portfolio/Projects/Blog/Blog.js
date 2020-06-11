@@ -4,13 +4,16 @@ import WitcherImg from '../FFBE/ffbe-tmp-w3.png';
 
 const Blog = ({ id }) => {
     const [title] = useState('Blog Template');
-    const [image] = useState({
-        src: WitcherImg,
-        alt: 'Geralt of Rivia'
-    });
+    const [image] = useState([
+        {
+            src: WitcherImg,
+            alt: 'Geralt of Rivia'
+        }
+    ]);
     const [link] = useState('https://addlink');
+    const [techStack] = useState('React, Javascript');
     const [description] = useState(
-        'Accomplished Witcher'
+        'A dark-themed blog template utilizing client-side routing.'
     );
 
     const style = {
@@ -26,6 +29,7 @@ const Blog = ({ id }) => {
             title={title}
             link={link}
             description={description}
+            techStack={techStack}
             style={style}
         />
     );

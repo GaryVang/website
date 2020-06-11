@@ -3,15 +3,39 @@ import React, { useState } from 'react';
 import './PortfolioPanel.css';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+import CloseIcon from '@material-ui/icons/Close';
 
-const PortfolioPanel = ({ id, image, title, description, link, style }) => {
+const PortfolioPanel = ({ id, image, title, description, link, style, techStack }) => {
+
+    const [imgIndex, setImgIndex] = useState(0);
+    const [imgFullScreen, setImgFullScreen] = useState(false);
 
     const handleLeftArrow = () => {
-        console.log('port left arrow clicked');
+        if(imgIndex === 0){
+            setImgIndex(image.length - 1);
+        } else {
+            setImgIndex(imgIndex - 1);
+        }
+        // console.log('port left arrow clicked');
     };
 
     const handleRightArrow = () => {
-        console.log('port right arrow clicked');
+        if(imgIndex === image.length - 1) {
+            setImgIndex(0);
+        } else {
+            setImgIndex(imgIndex + 1);
+        }
+        // console.log('port right arrow clicked');
+    };
+
+    const handleImgClickFS = () => {
+        // console.log('img fullscreen');
+        setImgFullScreen(true);
+    };
+
+    const handleImgClickFSClose = () => {
+        // console.log('img fs close');
+        setImgFullScreen(false);
     };
 
     const renderPortfolio = () => {
@@ -20,19 +44,27 @@ const PortfolioPanel = ({ id, image, title, description, link, style }) => {
             return (
                 <div className='portfolio-panel-container' style={style}>
                     <div className='portfolio-panel-img-container'>
-                        <img className='portfolio-panel-img' src={image.src} alt={image.alt} />
+                        <img className='portfolio-panel-img' src={image[imgIndex].src} alt={image[imgIndex].alt} onClick={handleImgClickFS}/>
                         <div className='portfolio-panel-img-bot-wrapper'>
                             <NavigateBeforeIcon className='portfolio-nav-arrow' fontSize='large' onClick={handleLeftArrow} />
-                            <label className='portfolio-panel-img-title'>IMG Title</label>
+                            <label className='portfolio-panel-img-title'>{image[imgIndex].alt}</label>
                             <NavigateNextIcon className='portfolio-nav-arrow' fontSize='large' onClick={handleRightArrow} />
                         </div>
                     </div>
                     {/* <img className='portfolio-panel-img' src={image.src} alt={image.alt} /> */}
                     <div className='portfolio-info-container'>
                         <h1>{title}</h1>
-                        <h3>Link: {link}</h3>
-                        <h3>{description}</h3>
+                        <h4>Link: {link}</h4>
+                        <h4>Tech Stack: {techStack}</h4>
+                        <h4>{description}</h4>
                     </div>
+                    {imgFullScreen ? 
+                        <div className='portfolio-panel-img-fs-container'>
+                            <img className='portfolio-panel-img-fs' src={image[imgIndex].src} alt={image[imgIndex].alt} onClick={handleImgClickFSClose}/>
+                            {/* <button className='portfolio-panel-img-fs-btn-close' onClick={handleImgClickFSClose}>X</button> */}
+                            <CloseIcon className='portfolio-panel-img-fs-btn-close' onClick={handleImgClickFSClose} />
+                        </div>
+                    : null}
                 </div>
             );
         } else {
@@ -40,17 +72,25 @@ const PortfolioPanel = ({ id, image, title, description, link, style }) => {
                 <div className='portfolio-panel-container' style={style}>
                     <div className='portfolio-info-container'>
                         <h1>{title}</h1>
-                        <h3>Link: {link}</h3>
-                        <h3>{description}</h3>
+                        <h4>Link: {link}</h4>
+                        <h4>Tech Stack: {techStack}</h4>
+                        <h4>{description}</h4>
                     </div>
                     <div className='portfolio-panel-img-container'>
-                        <img className='portfolio-panel-img' src={image.src} alt={image.alt} />
+                        <img className='portfolio-panel-img' src={image[imgIndex].src} alt={image[imgIndex].alt} onClick={handleImgClickFS} />
                         <div className='portfolio-panel-img-bot-wrapper'>
                             <NavigateBeforeIcon className='portfolio-nav-arrow' fontSize='large' onClick={handleLeftArrow} />
-                            <label className='portfolio-panel-img-title'>IMG Title</label>
+                            <label className='portfolio-panel-img-title'>{image[imgIndex].alt}</label>
                             <NavigateNextIcon className='portfolio-nav-arrow' fontSize='large' onClick={handleRightArrow} />
                         </div>
                     </div>
+                    {imgFullScreen ? 
+                        <div className='portfolio-panel-img-fs-container'>
+                            <img className='portfolio-panel-img-fs' src={image[imgIndex].src} alt={image[imgIndex].alt} onClick={handleImgClickFSClose}/>
+                            {/* <button className='portfolio-panel-img-fs-btn-close' onClick={handleImgClickFSClose}>X</button> */}
+                            <CloseIcon className='portfolio-panel-img-fs-btn-close' onClick={handleImgClickFSClose} />
+                        </div>
+                    : null}
                 </div>
             );
         }

@@ -5,10 +5,23 @@ import './Portfolio.css';
 
 const Portfolio = ({}) => {
 
+    // const [imgFullScreen, setImgFullScreen] = useState(true);
+
+    // const enableFullScreen = () => {
+    //     setImgFullScreen(true);
+    // };
+
+    // const disableFullScreen = () => {
+    //     setImgFullScreen(false);
+    // };
+
     return (
-        <div className='portfolio-container'>
+        <div className='portfolio-container' >
             My Portfolio
             <PortfolioList />
+            {/* {imgFullScreen ? <div className='portfolio-fs-background' >hello</div>
+                : null 
+            } */}
         </div>
     );
 };

@@ -4,15 +4,18 @@ import WitcherImg from '../FFBE/ffbe-tmp-w3.png';
 
 const Scooper = ({ id }) => {
     const [title] = useState(
-        '2D Scoop Game - Java'
+        '2D Scoop Game'
     );
-    const [image] = useState({
-        src: WitcherImg,
-        alt: 'Geralt of Rivia'
-    });
-    const [link] = useState('https://addlink');
+    const [image] = useState([
+        {
+            src: WitcherImg,
+            alt: 'Geralt of Rivia'
+        }
+    ]);
+    const [link] = useState('https://github.com/GaryVang/2D-Scoop-Game');
+    const [techStack] = useState('Java');
     const [description] = useState(
-        'Accomplished Witcher'
+        'A 2D game designed using object-oriented programming (OOP) and utilizing multiple design patterns: MVC, Command, Singleton, Factory, etc.'
     );
 
     const style = {
@@ -28,6 +31,7 @@ const Scooper = ({ id }) => {
             title={title}
             link={link}
             description={description}
+            techStack={techStack}
             style={style}
         />
     );
