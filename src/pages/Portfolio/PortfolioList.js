@@ -12,8 +12,8 @@ const PortfolioList = ({}) => {
     const renderProject = () => {
        return portfolioList.map((Project, index)=> {
             return (
-                <React.Fragment>
-                    <Project key={index} id={index+1}/>
+                <React.Fragment className='react-frag'>
+                    <Project className='hello' key={index} id={index+1}/>
                 </React.Fragment>
             );
         });
@@ -22,6 +22,8 @@ const PortfolioList = ({}) => {
     return (
         <div className='portfolio-list-container'>
             {renderProject()}
+            {/* <div>{renderProject()}</div> */}
+            {/* <div className='hello'>hello</div> */}
         </div>
     );
 };

@@ -41,23 +41,36 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Nav 
+        <Nav className='test-nav'
           darkTheme={darkTheme} 
           changeToLight={changeToLight}
           changeToDark={changeToDark}
           isLoggedIn={isLoggedIn}
         />
-        <Switch>
+        <div className='app-content'>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/blog' component={Blog} />
+            <Route exact path='/speedrun' component={Speedrun} />
+            <Route exact path='/game' component={Game} />
+            <Route exact path='/portfolio' component={Portfolio} />
+            {/* <Route exact path='/login' render={() => <Login isLoggedIn={isLoggedIn}/>} /> */}
+            {/* <Route exact path='/signup' render={() => <Signup isLoggedIn={isLoggedIn}/>} /> */}
+            <Route component={PageNotFound} />
+          </Switch>
+        </div>
+        {/* <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/blog' component={Blog} />
           <Route exact path='/speedrun' component={Speedrun} />
           <Route exact path='/game' component={Game} />
-          <Route exact path='/portfolio' component={Portfolio} />
+          <Route exact path='/portfolio' component={Portfolio} /> */}
           {/* <Route exact path='/login' render={() => <Login isLoggedIn={isLoggedIn}/>} /> */}
           {/* <Route exact path='/signup' render={() => <Signup isLoggedIn={isLoggedIn}/>} /> */}
-          <Route component={PageNotFound} />
-        </Switch>
+          {/* <Route component={PageNotFound} /> */}
+        {/* </Switch> */}
       </Router>
       {setTheme()}
     </div>
