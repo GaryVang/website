@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PortfolioPanel from '../../PortfolioPanel';
 import WitcherImg from '../FFBE/ffbe-tmp-w3.png';
+import UMLImg from './UML-Diagram.png';
+import ScoopImg from './scoop-img.png';
 
 const Scooper = ({ id }) => {
     const [title] = useState(
@@ -8,9 +10,13 @@ const Scooper = ({ id }) => {
     );
     const [image] = useState([
         {
-            src: WitcherImg,
-            alt: 'Geralt of Rivia'
-        }
+            src: ScoopImg,
+            alt: '2D Scoop'
+        },
+        {
+            src: UMLImg,
+            alt: 'UML Diagram'
+        },
     ]);
     const [link] = useState('https://github.com/GaryVang/2D-Scoop-Game');
     const [techStack] = useState('Java');

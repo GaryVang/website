@@ -5,7 +5,9 @@
     flex-direction: row;
     justify-content: space-between;
     /* width: 100%; */
-    min-width: 500px;
+    /* min-width: 500px; */
+    /* min-width: 915.583px; */
+    min-width: 915.5916px;
     /* min-width: 700px; */
     max-width: 915.5916px;
     /* width: 915.5916px; */
@@ -15,19 +17,27 @@
 }
 
 .portfolio-panel-img-container {
+    height: 100%;
     display: flex;
     flex-direction: column;
+    /* max-width: 50%; */
+    /* min-width: 45%; */
     width: 45%;
     /* height: 100%; */
     /* background-color: blue; */
 }
 
 .portfolio-panel-img-bot-wrapper {
+    /* height: 12%; */
+    height: 36px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
+
     justify-content: space-between;
+
+    margin-top: auto;
+    background-color: rgba(31, 31, 31, 0.37)
 }
 
 .portfolio-panel-img {
@@ -37,6 +47,7 @@
     /* width: 45%; */
     width: 100%;
     object-fit: contain;
+    max-height: 88%;
 }
 
 .portfolio-nav-arrow {
@@ -52,6 +63,8 @@
     /* height: 100%; */
     /* min-width: 30%; */
     /* max-width: 45%; */
+    /* max-width: 49%; */
+    /* min-width: 45%; */
     width: 45%;
     border: 1px solid red;
 }
@@ -65,8 +78,6 @@
     top: 1;
     left: 0;
     width: 100%;
-    /* height: 100%; */
-    /* background: pink; */
     background-color: rgba(100, 100, 100, 0.9);
     z-index: 100;
     /* opacity: .6; */
@@ -75,19 +86,29 @@
     box-sizing: border-box;
     border: 6px solid darkgrey;
     border-radius: 12px;
+    /* height: 100%; */
+
+    /* max-height: 100%; */
+
+    /* height: 100rem; */
+    /* height: 650.25px; */
+    /* max-height: 500px; */
 }
 
 .portfolio-panel-img-fs {
-    width: 90%;
-    /* position: relative; */
-    /* opacity: 1; */
-    /* position: absolute; */
     /* width: 90%; */
-    /* top: 10; */
-    /* left: 5%; */
-    /* background: black; */
+    max-width: 90%;
+    /* max-height: 100%; */
+    /* max-height: 700px; */
+    /* max-height: inherit; */
+    /* position: relative; */
+ 
     /* z-index: 100; */
-    
+
+    /* object-fit: contain; */
+    /* height: inherit; */
+    /* height: auto; */
+    /* width: auto; */
 }
 
 .portfolio-panel-img-fs-btn-close {
