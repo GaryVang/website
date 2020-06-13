@@ -23,15 +23,20 @@ const Scooper = ({ id }) => {
             alt: 'UML Diagram'
         },
     ]);
-    const [link] = useState('https://github.com/GaryVang/2D-Scoop-Game');
+    const [link] = useState([
+        {
+            url:'https://github.com/GaryVang/2D-Scoop-Game',
+            title: 'GitHub Repo'
+        }
+    ]);
     const [techStack] = useState('Java');
     const [description] = useState(
         'A 2D game designed using object-oriented programming (OOP) and utilizing multiple design patterns: MVC, Command, Singleton, Factory, etc.'
     );
 
     const style = {
-        backgroundColor: 'black',
-        color: 'white',
+        // backgroundColor: 'black',
+        // color: 'white',
         fontFamily: 'mason serif'
     };
 

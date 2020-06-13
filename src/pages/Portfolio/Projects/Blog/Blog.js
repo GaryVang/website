@@ -16,16 +16,27 @@ const Blog = ({ id }) => {
             alt: 'Signup'
         },
     ]);
-    const [link] = useState('https://addlink');
+    const [link] = useState([
+        {
+            url: 'https://blog-template-v.herokuapp.com/',
+            title: 'Website',
+            note:  '*Wait a few secs for the server to wake up'
+        },
+        {
+            url: 'https://github.com/GaryVang/blog-new-template',
+            title: 'GitHub Repo'
+        }
+    ]);
     const [techStack] = useState('React, Javascript');
     const [description] = useState(
         'A dark-themed blog template utilizing client-side routing.'
     );
 
     const style = {
-        backgroundColor: 'black',
-        color: 'white',
+        // backgroundColor: 'black',
+        // color: 'white',
         fontFamily: 'mason serif'
+        // borderColor: 'rgb(129, 4, 4)'
     };
     
     return (

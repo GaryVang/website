@@ -38,12 +38,31 @@ const PortfolioPanel = ({ id, image, title, description, link, style, techStack 
         setImgFullScreen(false);
     };
 
+    const renderLinks = () => {
+        return link.map(link => 
+            <div>
+                <a className='portfolio-info-link' href={link.url}>{link.title}</a>
+                {link.note ? <span className='portfolio-info-link-note'> {link.note}</span>: null}
+            </div>
+        );
+
+        // <div><a className='portfolio-info-link' href={link.url}>{link.title}</a></div>
+
+        // return portfolioList.map((Project, index)=> {
+        //     return (
+        //         <React.Fragment>
+        //             <Project key={index} id={index+1}/>
+        //         </React.Fragment>
+        //     );
+        // });
+    };
+
     const renderPortfolio = () => {
         // console.log(key%2);
         if(id%2 === 1){
             return (
                 <div className='portfolio-panel-container' style={style}>
-                    <div className='portfolio-panel-img-container'>
+                    <div className='portfolio-panel-img-container p-shadow-top'>
                         <img className='portfolio-panel-img' src={image[imgIndex].src} alt={image[imgIndex].alt} onClick={handleImgClickFS}/>
                         <div className='portfolio-panel-img-bot-wrapper'>
                             <NavigateBeforeIcon className='portfolio-nav-arrow' fontSize='large' onClick={handleLeftArrow} />
@@ -52,10 +71,13 @@ const PortfolioPanel = ({ id, image, title, description, link, style, techStack 
                         </div>
                     </div>
                     {/* <img className='portfolio-panel-img' src={image.src} alt={image.alt} /> */}
-                    <div className='portfolio-info-container'>
+                    <div className='portfolio-info-container p-shadow-bot'>
                         <h1>{title}</h1>
-                        <h4>Link: {link}</h4>
-                        <h4>Tech Stack: {techStack}</h4>
+                        <h4> {renderLinks()}
+                            {/* <a className='portfolio-info-link' href={link.url}>{link.title}</a>
+                            <div><a className='portfolio-info-link' href={link.url}>{link.title}</a></div> */}
+                        </h4>
+                        <h4>Tech Stack: <span className='portfolio-info-tech'>{techStack}</span></h4>
                         <h4>{description}</h4>
                     </div>
                     {imgFullScreen ? 
@@ -69,15 +91,17 @@ const PortfolioPanel = ({ id, image, title, description, link, style, techStack 
             );
         } else {
             return (
-                <div className='portfolio-panel-container' style={style}>
-                    <div className='portfolio-info-container'>
+                <div className='portfolio-panel-container' >
+                    <div className='portfolio-info-container p-shadow-top' style={style}>
                         <h1>{title}</h1>
-                        <h4>Link: {link}</h4>
-                        <h4>Tech Stack: {techStack}</h4>
+                        <h4>{renderLinks()}
+                            {/* <a className='portfolio-info-link' href={link.url}>{link.title}</a> */}
+                        </h4>
+                        <h4>Tech Stack: <span className='portfolio-info-tech'>{techStack}</span></h4>
                         <h4>{description}</h4>
                     </div>
-                    <div className='portfolio-panel-img-container'>
-                        <img className='portfolio-panel-img' src={image[imgIndex].src} alt={image[imgIndex].alt} onClick={handleImgClickFS} />
+                    <div className='portfolio-panel-img-container p-shadow-bot' >
+                        <img className='portfolio-panel-img' src={image[imgIndex].src} alt={image[imgIndex].alt} onClick={handleImgClickFS} style={style}/>
                         <div className='portfolio-panel-img-bot-wrapper'>
                             <NavigateBeforeIcon className='portfolio-nav-arrow' fontSize='large' onClick={handleLeftArrow} />
                             <label className='portfolio-panel-img-title'>{image[imgIndex].alt}</label>

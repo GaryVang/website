@@ -7,18 +7,23 @@ const SeniorProject = ({ id }) => {
     const [image] = useState([
         {
             src: WitcherImg,
-            alt: 'No image so here\'s Geralt of Rivia'
+            alt: 'No image so here\'s Geralt'
         }
     ]);
-    const [link] = useState('https://sacscip.org/');
+    const [link] = useState([
+        {
+            url:'https://sacscip.org/',
+            title: 'Organization\'s Website'
+        }
+    ]);
     const [techStack] = useState('Microsoft Access, VBA, Microsoft SQL');
     const [description] = useState(
-        'A database management system built by a team of 5 for the Sacramento Sheriff\'s Community Impact Program (SCIP). My contribution was the Program Management Feature.'
+        'A database management system built by a team of 5 for the Sacramento Sheriff\'s Community Impact Program (SCIP). I was responsible for the Program Management Feature.'
     );
 
     const style = {
-        backgroundColor: 'black',
-        color: 'white',
+        // backgroundColor: 'black',
+        // color: 'white',
         fontFamily: 'mason serif'
     };
 

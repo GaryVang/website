@@ -37,7 +37,17 @@ const FFBE = ({ id }) => {
             alt: 'FFBE Data Scraper Tool'
         }
     ]);
-    const [link] = useState('https://ffbe-builder-v.herokuapp.com/');
+    const [link] = useState([
+        { 
+            url: 'https://ffbe-builder-v.herokuapp.com/',
+            title: 'Website',
+            note: '*Wait few secs for the server to wake up'
+        },
+        {
+            url: 'https://github.com/GaryVang/ffbe-party-builder',
+            title: 'GitHub Repo'
+        }
+    ]);
     const [techStack] = useState('React, Javascript, Node JS, Express, PostgreSQL');
     const [description] = useState(
         // 'A tool for organizing thoughts and strategies.'
