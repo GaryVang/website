@@ -60,7 +60,8 @@
     max-height: 88%;
     flex-grow: 1;
     box-sizing: border-box;
-    border: 5px solid white;
+    /* border: 5px solid white; */
+    border: 10px ridge #1C6EA4;
     background-color: black;
 }
 
