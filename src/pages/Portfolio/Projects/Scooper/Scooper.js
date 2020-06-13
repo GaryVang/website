@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import PortfolioPanel from '../../PortfolioPanel';
 import WitcherImg from '../FFBE/ffbe-tmp-w3.png';
 import UMLImg from './UML-Diagram.png';
-import ScoopImg from './scoop-img.png';
+import ScoopImgGameplay from './scoop_gameplay.png';
+import ScoopImgInitial from './scoop_initial-view.png';
 
 const Scooper = ({ id }) => {
     const [title] = useState(
@@ -10,8 +11,12 @@ const Scooper = ({ id }) => {
     );
     const [image] = useState([
         {
-            src: ScoopImg,
-            alt: '2D Scoop'
+            src: ScoopImgInitial,
+            alt: 'Start Screen'
+        },
+        {
+            src: ScoopImgGameplay,
+            alt: 'Gameplay'
         },
         {
             src: UMLImg,
