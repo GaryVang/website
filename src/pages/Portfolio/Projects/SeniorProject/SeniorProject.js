@@ -7,7 +7,7 @@ const SeniorProject = ({ id }) => {
     const [image] = useState([
         {
             src: WitcherImg,
-            alt: 'No image so here\'s Geralt'
+            alt: 'No image so here\'s Geralt (prob change)'
         }
     ]);
     const [link] = useState([

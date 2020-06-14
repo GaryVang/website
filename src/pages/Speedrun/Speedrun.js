@@ -2,7 +2,7 @@ import React from 'react';
 const Speedrun = ({}) => {
 
     return (
-        <div>Speedrun Page!</div>
+        <div>Speedrun Page! (TBD)</div>
     )
 
 };

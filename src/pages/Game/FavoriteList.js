@@ -56,8 +56,11 @@ const FavoriteList = ({}) => {
     return (
         <div className='favorite-container'>
             <div className={visible ? 'fadeIn' : 'fadeOut'}>{renderGame()}</div>
-            <NavigateBeforeIcon className='favorite-nav-arrow' fontSize='large' onClick={handleLeftArrow} />
-            <NavigateNextIcon className='favorite-nav-arrow' fontSize='large' onClick={handleRightArrow} />
+            <div className='favorite-nav-container'>
+                <NavigateBeforeIcon className='favorite-nav-arrow' fontSize='large' onClick={handleLeftArrow} />
+                <NavigateNextIcon className='favorite-nav-arrow' fontSize='large' onClick={handleRightArrow} />
+            </div>
+            
         </div>
     );
 };

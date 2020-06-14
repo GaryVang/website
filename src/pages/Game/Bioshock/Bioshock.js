@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import GamePanel from '../GamePanel';
-import BioshockImg from './bioshock-logo.jpg';
+
 import BioshockImgBD from './bioshock_bd-ls.jpg';
 
 const Bioshock = ({}) => {
@@ -12,7 +12,7 @@ const Bioshock = ({}) => {
     const [description] = useState(
         'I received this game as a Christmas present, but at the time, I wasn\'t too fond of' +
         ' horror games, so I shelved it for 6-12 months without even opening the case.' +
-        ' When I finally did played it, I became completely engrossed in its atmosphere.' +
+        ' When I finally did play it, I became completely engrossed in its atmosphere.' +
         ' It\'s not too often that a game has changed my perspective on something, but' +
         ' this game completely changed my view of the horror genre with its beautifully constructed' +
         ' environment and atmosphere.' +
