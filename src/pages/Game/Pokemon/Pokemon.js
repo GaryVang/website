@@ -8,8 +8,20 @@ const PokemonGS = ({}) => {
         src: PokemonImg,
         alt: 'Pokemon Gold & Silver'
     })
-    const [description] = useState('Description');
-    const [message] = useState('Message');
+    const [description] = useState(
+        // 'Red and Blue was where it started, but GS was where the game truly took off.' +
+        ' As the sequel to the popular Gameboy games, Pokemon Red Version and Pokemon Blue Version,' +
+        ' no one had any idea where the series was headed, but boy did this sequel deliver.' +
+        ' Not only did it include everything from its predecessor, it also added even more content on top of it.' +
+        ' \n\nAs a child, this was unheard of because a majority of sequels were' + 
+        ' created with the idea that they were to be a seperate entity and any connections to' +
+        ' their predecessors were to be kept to a minimum. As of today, G&S and their remakes—Heart Gold' +
+        ' and Soul Silver—are the only games in the series to incorporate a predecessor\'s content' +
+        ' in such detail.'
+    );
+    const [message] = useState(
+        '2000 (North America)—Game Freak'
+    );
 
     const style = {
         backgroundColor: 'gold',

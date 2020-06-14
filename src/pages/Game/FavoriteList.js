@@ -3,6 +3,9 @@ import './FavoriteList.css';
 import Witcher3 from './Witcher3/Witcher3';
 // import * as sayBye from './Witcher3/Witcher3'; // Remove after tests
 import PokemonGS from './Pokemon/Pokemon';
+import Bioshock from './Bioshock/Bioshock';
+import SuperMarioKart from './SuperMarioKart/SuperMarioKart';
+
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 
@@ -16,7 +19,7 @@ const FavoriteList = ({}) => {
         return () => clearTimeout(timer);
     }, [visible]);
     // const [gameList] = useState([<Witcher3/>, <PokemonGS/>]);
-    const [gameList] = useState([Witcher3, PokemonGS]);
+    const [gameList] = useState([Witcher3, PokemonGS, Bioshock, SuperMarioKart]);
     const [count, setCount] = useState(0);
     
 
