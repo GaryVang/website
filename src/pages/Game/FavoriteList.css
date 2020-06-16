@@ -21,6 +21,7 @@
     background-color: grey;
     /* margin-bottom: -4px; */
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .favorite-nav-arrow:hover {

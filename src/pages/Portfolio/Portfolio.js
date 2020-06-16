@@ -19,7 +19,7 @@ const Portfolio = ({}) => {
 
     return (
         <div className='portfolio-container' >
-            <h2 className='portfolio-header'>My Projects</h2>
+            <h2 className='portfolio-header'>My Portfolio</h2>
             {/* <a className='portfolio-github' href={URL_GITHUB}>{URL_GITHUB}</a> */}
             <PortfolioList />
             {/* {imgFullScreen ? <div className='portfolio-fs-background' >hello</div>

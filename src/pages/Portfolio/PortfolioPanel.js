@@ -78,7 +78,7 @@ const PortfolioPanel = ({ id, image, title, description, link, style, techStack 
                             <div><a className='portfolio-info-link' href={link.url}>{link.title}</a></div> */}
                         </h4>
                         <h4>Tech Stack: <span className='portfolio-info-tech'>{techStack}</span></h4>
-                        <h4>{description}</h4>
+                        <h4 className='portfolio-info-desc'>{description}</h4>
                     </div>
                     {imgFullScreen ? 
                         <div className='portfolio-panel-img-fs-container'>
@@ -98,7 +98,7 @@ const PortfolioPanel = ({ id, image, title, description, link, style, techStack 
                             {/* <a className='portfolio-info-link' href={link.url}>{link.title}</a> */}
                         </h4>
                         <h4>Tech Stack: <span className='portfolio-info-tech'>{techStack}</span></h4>
-                        <h4>{description}</h4>
+                        <h4 className='portfolio-info-desc'>{description}</h4>
                     </div>
                     <div className='portfolio-panel-img-container p-shadow-bot' >
                         <img className='portfolio-panel-img' src={image[imgIndex].src} alt={image[imgIndex].alt} onClick={handleImgClickFS} style={style}/>

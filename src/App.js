@@ -17,7 +17,7 @@ import Footer from './pages/components/Footer/Footer';
 
 function App() {
 
-  const [darkTheme, setDarkTheme] = useState(true);
+  const [darkTheme, setDarkTheme] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const changeToLight = () => {
@@ -34,7 +34,9 @@ function App() {
       document.body.style.color = 'black';
     } else {
       document.body.style.backgroundColor = 'rgb(31, 31, 31)';
-      document.body.style.color = 'rgba(255, 255, 255, 0.712)';
+      // document.body.style.color = 'rgba(255, 255, 255, 0.712)';
+      // document.body.style.color = 'rgba(255, 255, 255, .9)';
+      document.body.style.color = 'rgba(255, 255, 255, 1)';
     }
   }
 

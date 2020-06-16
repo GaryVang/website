@@ -2,7 +2,7 @@
     display: inline-flex;
     width: 100%;
     justify-content: flex-end;
-    cursor: default;
+    /* cursor: default; */
     align-items: center;
     /* height: 48px; */
     font-size: 1rem;
@@ -33,13 +33,14 @@
 
 .theme-icon {
     margin: 0px 15px 0px 5px;
+    cursor: pointer;
     /* display: flex; */
     /* align-items: center; */
 }
 
 .nav-tab {
     padding: 4px 8px;
-    cursor: default;
+    /* cursor: default; */
     text-decoration: none;
     color: inherit;
     display: flex;
@@ -59,7 +60,8 @@
 
 .dark {
     background-color: rgb(75, 75, 75);
-    color: rgba(255, 255, 255, 0.712);
+    /* color: rgba(255, 255, 255, 0.712); */
+    color: rgba(255, 255, 255, .9);
     transition: all 0.25s linear;
     /* position: relative; */
 }
@@ -90,6 +92,7 @@
     padding: 10px;
     /* transition: all .1s; */
     z-index: 200;
+    color: rgba(255, 255, 255, .9);
 }
 
 .theme-toggle-label-light {
