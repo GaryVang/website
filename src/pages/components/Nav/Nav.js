@@ -35,75 +35,75 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
 
     const renderNav = () => {
         return !darkTheme ? 
-        <div className='nav-container light'>
-            <NavLink to='/' activeClassName='nav-active' className='nav-tab'>
+        <nav className='nav-container light'>
+            <NavLink exact to='/' activeClassName='nav-active' className='nav-tab'>
                 <HomeIcon className='nav-icon' fontSize='inherit'/>
                 Home
             </NavLink>
-            <NavLink to='/portfolio' activeClassName='nav-active' className='nav-tab'>
+            <NavLink exact to='/portfolio' activeClassName='nav-active' className='nav-tab'>
                 <JobIcon className='nav-icon' fontSize='inherit'/>
                 Portfolio
             </NavLink>
-            {/* <NavLink to='/blog' activeClassName='nav-active' className='nav-tab'>
+            {/* <NavLink exact to='/blog' activeClassName='nav-active' className='nav-tab'>
                 <BlogIcon className='nav-icon' fontSize='inherit'/>
                 Blog
             </NavLink> */}
-            <NavLink to='/game' activeClassName='nav-active' className='nav-tab'>
+            <NavLink exact to='/game' activeClassName='nav-active' className='nav-tab'>
                 <GameIcon className='nav-icon' fontSize='inherit'/>
                 Games
             </NavLink>
-            <NavLink to='/speedrun' activeClassName='nav-active' className='nav-tab'>
+            <NavLink exact to='/speedrun' activeClassName='nav-active' className='nav-tab'>
                 <TimerIcon className='nav-icon' fontSize='inherit'/>
                 Speedrun
             </NavLink>
-            <NavLink to='/about' activeClassName='nav-active' className='nav-tab'>
+            <NavLink exact to='/about' activeClassName='nav-active' className='nav-tab'>
                 About
             </NavLink>
-            {/* <NavLink to='/login' activeClassName='nav-active' className='nav-tab login'>
+            {/* <NavLink exact to='/login' activeClassName='nav-active' className='nav-tab login'>
                 Log in
             </NavLink>
-            <NavLink to='/signup' activeClassName='nav-active' className='nav-tab signup'>
+            <NavLink exact to='/signup' activeClassName='nav-active' className='nav-tab signup'>
                 Sign up
             </NavLink> */}
             <Light className='theme-icon' onClick={changeToDark} onMouseEnter={onThemeHover} onMouseLeave={onThemeMouseLeave}/>
             {themeFocus ? <h4 className='theme-toggle-label-light'>Toggle Dark Theme</h4> 
             : null}
-        </div> 
+        </nav> 
         :
-        <div className='nav-container dark'>
-            <NavLink to='/' activeClassName='nav-active' className='nav-tab home-tab'>
+        <nav className='nav-container dark'>
+            <NavLink exact to='/' activeClassName='nav-active' className='nav-tab home-tab'>
                 <HomeIcon className='nav-icon' fontSize='inherit'/>
                 Home
             </NavLink>
-            <NavLink to='/portfolio' activeClassName='nav-active' className='nav-tab'>
+            <NavLink exact to='/portfolio' activeClassName='nav-active' className='nav-tab'>
                 <JobIcon className='nav-icon' fontSize='inherit'/>
                 Portfolio
             </NavLink>
-            {/* <NavLink to='/blog' activeClassName='nav-active' className='nav-tab'>
+            {/* <NavLink exact to='/blog' activeClassName='nav-active' className='nav-tab'>
                 <BlogIcon className='nav-icon' fontSize='inherit'/>
                 Blog
             </NavLink> */}
-            <NavLink to='/game' activeClassName='nav-active' className='nav-tab'>
+            <NavLink exact to='/game' activeClassName='nav-active' className='nav-tab'>
                 <GameIcon className='nav-icon' fontSize='inherit'/>
                 Games
             </NavLink>
-            <NavLink to='/speedrun' activeClassName='nav-active' className='nav-tab'>
+            <NavLink exact to='/speedrun' activeClassName='nav-active' className='nav-tab'>
                 <TimerIcon className='nav-icon' fontSize='inherit'/>
                 Speedrun
             </NavLink>
-            <NavLink to='/about' activeClassName='nav-active' className='nav-tab'>
+            <NavLink exact to='/about' activeClassName='nav-active' className='nav-tab'>
                 About
             </NavLink>
-            {/* <NavLink to='/login' activeClassName='nav-active' className='nav-tab login'>
+            {/* <NavLink exact to='/login' activeClassName='nav-active' className='nav-tab login'>
                 Log in
             </NavLink>
-            <NavLink to='/signup' activeClassName='nav-active' className='nav-tab signup'>
+            <NavLink exact to='/signup' activeClassName='nav-active' className='nav-tab signup'>
                 Sign up
             </NavLink> */}
             <Dark className='theme-icon' onClick={changeToLight} onMouseEnter={onThemeHover} onMouseLeave={onThemeMouseLeave}/>
             {themeFocus ? <h4 className='theme-toggle-label-dark'>Toggle Light Theme</h4> 
             : null}
-        </div>
+        </nav>
     }
 
     return (

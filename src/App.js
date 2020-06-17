@@ -43,12 +43,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Nav className='test-nav'
-          darkTheme={darkTheme} 
-          changeToLight={changeToLight}
-          changeToDark={changeToDark}
-          isLoggedIn={isLoggedIn}
-        />
+        <header>
+          <Nav
+            darkTheme={darkTheme} 
+            changeToLight={changeToLight}
+            changeToDark={changeToDark}
+            isLoggedIn={isLoggedIn}
+          />
+        </header>
         <div className='app-content'>
           <Switch>
             <Route exact path='/' component={Home} />
