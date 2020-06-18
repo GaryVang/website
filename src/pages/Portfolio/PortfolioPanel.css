@@ -13,7 +13,8 @@
     /* width: 915.5916px; */
     height: 300px;
 
-    margin: 20px 0 50px 0;
+    /* margin: 20px 0 50px 0; */
+    margin: 20px 0 70px 0;
 }
 
 .portfolio-panel-img-container {
@@ -189,6 +190,7 @@
         /* height: 600px; */
         height: 600px;
         width: 414px;
+        margin-bottom: 40px;
     }
 
     .portfolio-panel-img-container {
