@@ -1,0 +1,38 @@
+.about-panel-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    background-color: pink;
+}
+
+.about-panel-img-container {
+    width: 50%;
+    /* display: flex; */
+    /* align-content: center; */
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-panel-img {
+    /* width: 100%; */
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* width: 50%; */
+    object-fit: contain;
+}
+
+.about-panel-desc-container {
+    width: 44%;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-content: center; */
+    align-items: center;
+}

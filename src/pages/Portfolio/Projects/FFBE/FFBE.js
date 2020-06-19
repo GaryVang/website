@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PortfolioPanel from '../../PortfolioPanel';
 import WitcherImg from './ffbe-tmp-w3.png';
-import WitcherImg2 from './ffbe-tmp-w3-2.png';
 import FFBEImgInitial from './ffbe-builder_initial-view.png';
 import FFBEImgCompare from './ffbe-builder_compare.png';
 import FFBEImgUnitSearch from './ffbe-builder_unit-search.png';

@@ -1,11 +1,10 @@
 .about-container {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     margin:0;
-    background-image: url("bg-trees.jpg");
+    /* background-image: url("bg-trees.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* height: 100%; */
-    /* width: 100%; */
+    background-attachment: fixed; */
+
     height: 100%;
     background-size: cover;
     /* filter: blur(1px); */
@@ -18,8 +17,8 @@
 }
 
 .about-header {
-    color: white;
-    margin: 0;
+    /* color: white; */
+    /* margin: 0; */
 }
 
 .about-sect {

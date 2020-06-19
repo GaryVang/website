@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import BGTrees from './bg-trees.jpg';
+import ICPC from './Articles/ICPC';
 
 const About = ({}) => {
     return (
@@ -8,12 +9,13 @@ const About = ({}) => {
             <header>
                 <h2 className='about-header'>About Me</h2>
             </header>
-            <section className='about-sect'>
+            <ICPC />
+            {/* <section className='about-sect'>
                 <article className='about-sect-art'>
                     <img className='about-sect-art-img' src={BGTrees} alt='Trees' />
                     <p>Hello There</p>
                 </article>
-            </section>
+            </section> */}
         </section>
     );
 };

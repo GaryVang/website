@@ -57,7 +57,7 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
                 Speedrun
             </NavLink>
             <NavLink exact to='/about' activeClassName='nav-active' className='nav-tab'>
-                About
+                About Me
             </NavLink>
             {/* <NavLink exact to='/login' activeClassName='nav-active' className='nav-tab login'>
                 Log in
@@ -92,7 +92,7 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
                 Speedrun
             </NavLink>
             <NavLink exact to='/about' activeClassName='nav-active' className='nav-tab'>
-                About
+                About Me
             </NavLink>
             {/* <NavLink exact to='/login' activeClassName='nav-active' className='nav-tab login'>
                 Log in
