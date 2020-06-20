@@ -26,7 +26,10 @@ const Camping = ({ id }) => {
     // const [techStack] = useState('React, Javascript, Node JS, Express, PostgreSQL');
     const [description] = useState(
         // 'A tool for organizing thoughts and strategies.'
-        'A single-page application (SPA) tool for organizing thoughts and strategies. Just simply search for a unit and start gearing for your next boss fight!'
+        'This was taken during my family\'s annual camping trip that I always look forward to.' +
+        ' No electronics, just some bbq, good company, and 80 degrees weather—it\'s normally over 100 where' +
+        ' I used to live.' +
+        ' You can see the bikes in the background.'
     );
 
     // const style = {

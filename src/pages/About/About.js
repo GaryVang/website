@@ -13,8 +13,8 @@ const About = ({}) => {
             <header>
                 <h2 className='about-header'>About Me</h2>
             </header>
-            <ICPC />
             <ACM />
+            <ICPC />
             <Cycling />
             <Camping />
             {/* <section className='about-sect'>

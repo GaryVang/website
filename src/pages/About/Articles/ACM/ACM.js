@@ -25,8 +25,10 @@ const ACM = ({ id }) => {
     // ]);
     // const [techStack] = useState('React, Javascript, Node JS, Express, PostgreSQL');
     const [description] = useState(
-        // 'A tool for organizing thoughts and strategies.'
-        'A single-page application (SPA) tool for organizing thoughts and strategies. Just simply search for a unit and start gearing for your next boss fight!'
+        'A picture of myself with my fellow Association for Computing Machinery (ACM) officers' +
+        ' after an event.' +
+        '\n\nTogether, my friends and I revived ACM and made it into one of the largest club in' +
+        ' the engineering department.'
     );
 
     // const style = {

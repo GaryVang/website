@@ -26,7 +26,11 @@ const ICPC = ({ id }) => {
     // const [techStack] = useState('React, Javascript, Node JS, Express, PostgreSQL');
     const [description] = useState(
         // 'A tool for organizing thoughts and strategies.'
-        'A single-page application (SPA) tool for organizing thoughts and strategies. Just simply search for a unit and start gearing for your next boss fight!'
+        'This is a picture of the Spring Programming Contest I organized.' +
+        '\n\nThis was the largest event for our club that semester and required' +
+        ' months of planning and work.' +
+        ' All of that hard work resulted in one of the largest turnouts and the largest' +
+        ' number of lower-division participants that the club had seen in almost a decade.'
     );
 
     // const style = {

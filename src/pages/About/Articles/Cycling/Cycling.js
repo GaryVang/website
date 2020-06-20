@@ -26,7 +26,12 @@ const Cycling = ({ id }) => {
     // const [techStack] = useState('React, Javascript, Node JS, Express, PostgreSQL');
     const [description] = useState(
         // 'A tool for organizing thoughts and strategies.'
-        'A single-page application (SPA) tool for organizing thoughts and strategies. Just simply search for a unit and start gearing for your next boss fight!'
+        'Cycling has always been a passion of mine. I mostly prefer trails and dirt roads but do' +
+        ' enjoy just riding around the neighborhood from time to time.' +
+        ' I\'m not too sure what it is about cycling that I enjoy so much, but there\'s just something' +
+        ' magical about riding a bike that\'s relaxing to me.' +
+        '\n\nThis picture was taken at the halfway point of a bike trip that my family and I had planned.' +
+        ' This was up in northern California, so only half of the route was paved.'
     );
 
     // const style = {
