@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import AboutPanel from '../AboutPanel';
-import TestImg from './tmp-w3.png';
+import AboutPanel from '../../AboutPanel';
+import TestImg from '../tmp-w3.png';
 
 
-const ICPC = ({ id }) => {
+const Cycling = ({ id }) => {
     const [title] = useState('Final Fantasy Brave Exvius Party Builder Tool');
     const [image] = useState(
         {
@@ -48,4 +48,4 @@ const ICPC = ({ id }) => {
     );
 };
 
-export default ICPC;
+export default Cycling;
