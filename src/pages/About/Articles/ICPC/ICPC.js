@@ -26,11 +26,12 @@ const ICPC = ({ id }) => {
     // const [techStack] = useState('React, Javascript, Node JS, Express, PostgreSQL');
     const [description] = useState(
         // 'A tool for organizing thoughts and strategies.'
-        'This is a picture of the Spring Programming Contest I organized.' +
-        '\n\nThis was the largest event for our club that semester and required' +
-        ' months of planning and work.' +
-        ' All of that hard work resulted in one of the largest turnouts and the largest' +
-        ' number of lower-division participants that the club had seen in almost a decade.'
+        'As the Event Coordinator of ACM, I was responsible for the events—two of which were' +
+        ' the local International Collegiate Programming Contest (ICPC) and the Spring Programming Contest.' +
+        ' Both took an enormous amount of time to plan and organize.' +
+        '\n\nAll of that hard work resulted in one of the largest turnouts and the largest turnout of lower-division' +
+        ' students that the school had seen in the last decade.' +
+        '\n\nThis picture was taken at the end of the Spring Programming Contest.'
     );
 
     // const style = {

@@ -13,9 +13,12 @@ const About = ({}) => {
             <header>
                 <h2 className='about-header'>About Me</h2>
             </header>
-            <ACM />
-            <ICPC />
             <Cycling />
+            <hr className='about-seperator'/>
+            <ACM />
+            <hr className='about-seperator'/>
+            <ICPC />
+            <hr className='about-seperator'/>
             <Camping />
             {/* <section className='about-sect'>
                 <article className='about-sect-art'>

@@ -26,10 +26,10 @@ const Camping = ({ id }) => {
     // const [techStack] = useState('React, Javascript, Node JS, Express, PostgreSQL');
     const [description] = useState(
         // 'A tool for organizing thoughts and strategies.'
-        'This was taken during my family\'s annual camping trip that I always look forward to.' +
-        ' No electronics, just some bbq, good company, and 80 degrees weather—it\'s normally over 100 where' +
-        ' I used to live.' +
-        ' You can see the bikes in the background.'
+        'This picture was taken during my family’s annual summer camping trip that I\'m always looking forward to.' +
+        ' It\’s a chance to get away from everything for a few days and spend some quality time with family, eat' +
+        ' too much bbq, and enjoy the 80 degree weather—it’s normally over 100 where I used to live.' +
+        '\n\nYou can also see the bikes in the background.'
     );
 
     // const style = {

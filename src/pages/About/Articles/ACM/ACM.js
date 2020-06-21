@@ -25,10 +25,10 @@ const ACM = ({ id }) => {
     // ]);
     // const [techStack] = useState('React, Javascript, Node JS, Express, PostgreSQL');
     const [description] = useState(
-        'A picture of myself with my fellow Association for Computing Machinery (ACM) officers' +
-        ' after an event.' +
-        '\n\nTogether, my friends and I revived ACM and made it into one of the largest club in' +
-        ' the engineering department.'
+        'A picture of myself with my friends and fellow Association for Computing Machinery (ACM) officers' +
+        ' after hosting a large event.' +
+        '\n\nThrough hard work and dedication, we revived the club and made it into one of the largest clubs in' +
+        ' the Engineering department at California State University, Sacramento.'
     );
 
     // const style = {
