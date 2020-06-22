@@ -5,8 +5,8 @@ import Dark from '@material-ui/icons/Brightness7';
 import Light from '@material-ui/icons/Brightness4';
 import HomeIcon from '@material-ui/icons/Home';
 import GameIcon from '@material-ui/icons/VideogameAsset';
-import TimerIcon from '@material-ui/icons/Timer';
-import BlogIcon from '@material-ui/icons/MenuBook';
+// import TimerIcon from '@material-ui/icons/Timer';
+// import BlogIcon from '@material-ui/icons/MenuBook';
 import JobIcon from '@material-ui/icons/WorkOutline';
 
 const Nav = ({ darkTheme, changeToLight, changeToDark }) => {

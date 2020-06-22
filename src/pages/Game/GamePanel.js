@@ -1,21 +1,9 @@
-import React, { useState } from 'react';
-// import WitcherImg from './witcher_3.jpg';
+import React from 'react';
 import './GamePanel.css';
 
 const GamePanel = ({ image, title, description, message, style }) => {
 
     return (
-        // <div className='game-panel-container' style={style}>
-        //     <div className='game-panel-top-wrapper'>
-        //         <img className='game-panel-img' src={image.src} alt={image.alt} />
-        //         <div className='game-panel-info'>
-        //             <h1 className='game-panel-title'>{title}</h1>
-        //             <h2 className='game-panel-description'>{description}</h2>
-        //         </div>
-        //     </div>
-        //     <h2 className='game-panel-msg'>{message}</h2>
-        // </div>
-
         <div className='game-panel-container' style={style}>
             <div className='game-panel-left-container'>
                 <img className='game-panel-img' src={image.src} alt={image.alt} />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import FFBE from './Projects/FFBE/FFBE';
 import Blog from './Projects/Blog/Blog';
 import SeniorProj from './Projects/SeniorProject/SeniorProject';
@@ -8,16 +8,6 @@ import './PortfolioList.css';
 const PortfolioList = ({ darkTheme }) => {
 
     const [portfolioList] = useState([FFBE, Scooper, SeniorProj, Blog]);
-
-    // const [imgFullScreen, setImgFullScreen] = useState(true);
-
-    // const enableFullScreen = () => {
-    //     setImgFullScreen(true);
-    // };
-
-    // const disableFullScreen = () => {
-    //     setImgFullScreen(false);
-    // };
 
     const renderProject = () => {
        return portfolioList.map((Project, index)=> {
@@ -32,11 +22,6 @@ const PortfolioList = ({ darkTheme }) => {
     return (
         <div className='portfolio-list-container'>
             {renderProject()}
-            {/* {imgFullScreen ? <div className='portfolio-fs-background' ></div>
-                : null 
-            } */}
-            {/* <div>{renderProject()}</div> */}
-            {/* <div className='hello'>hello</div> */}
         </div>
     );
 };

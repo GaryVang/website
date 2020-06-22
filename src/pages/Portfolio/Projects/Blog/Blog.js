@@ -33,10 +33,7 @@ const Blog = ({ id, darkTheme }) => {
     );
 
     const style = {
-        // backgroundColor: 'black',
-        // color: 'white',
         fontFamily: 'mason serif'
-        // borderColor: 'rgb(129, 4, 4)'
     };
     
     return (

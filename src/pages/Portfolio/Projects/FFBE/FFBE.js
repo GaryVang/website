@@ -49,13 +49,10 @@ const FFBE = ({ id, darkTheme }) => {
     ]);
     const [techStack] = useState('React, Javascript, Node JS, Express, PostgreSQL');
     const [description] = useState(
-        // 'A tool for organizing thoughts and strategies.'
         'A single-page application (SPA) tool for organizing thoughts and strategies. Just simply search for a unit and start gearing for your next boss fight!'
     );
 
     const style = {
-        // backgroundColor: 'black',
-        // color: 'white',
         fontFamily: 'mason serif'
     };
 

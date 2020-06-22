@@ -4,7 +4,7 @@ import AboutPanel from '../../AboutPanel';
 // import ICPCImg from './icpc.jpg';
 import ICPCImg from '../../../Game/Witcher3/witcher_3.jpg';
 
-const ICPC = ({ id }) => {
+const ICPC = ({}) => {
     const [title] = useState('ICPC');
     const [image] = useState(
         {
@@ -12,20 +12,8 @@ const ICPC = ({ id }) => {
             alt: 'ICPC'
         }
     );
-    // const [link] = useState([
-    //     { 
-    //         url: 'https://ffbe-builder-v.herokuapp.com/',
-    //         title: 'Website',
-    //         note: '*Wait few secs for the server to wake up'
-    //     },
-    //     {
-    //         url: 'https://github.com/GaryVang/ffbe-party-builder',
-    //         title: 'GitHub Repo'
-    //     }
-    // ]);
-    // const [techStack] = useState('React, Javascript, Node JS, Express, PostgreSQL');
+    
     const [description] = useState(
-        // 'A tool for organizing thoughts and strategies.'
         'As the Event Coordinator of ACM, I was responsible for the events—two of which were' +
         ' the local International Collegiate Programming Contest (ICPC) and the Spring Programming Contest.' +
         ' Both took an enormous amount of time to plan and organize.' +
@@ -34,21 +22,11 @@ const ICPC = ({ id }) => {
         '\n\nThis picture was taken at the end of the Spring Programming Contest.'
     );
 
-    // const style = {
-    //     // backgroundColor: 'black',
-    //     // color: 'white',
-    //     fontFamily: 'mason serif'
-    // };
-
     return (
         <AboutPanel
-            // id={id}
             image={image}
             title={title}
-            // link={link}
             description={description}
-            // techStack={techStack}
-            // style={style}
         />
     );
 };

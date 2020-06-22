@@ -27,8 +27,6 @@ const SeniorProject = ({ id, darkTheme }) => {
     );
 
     const style = {
-        // backgroundColor: 'black',
-        // color: 'white',
         fontFamily: 'mason serif'
     };
 

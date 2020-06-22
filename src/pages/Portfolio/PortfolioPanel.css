@@ -1,19 +1,9 @@
 .portfolio-panel-container {
-    /* display: inline-flex; */
-    /* vertical-align: top; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-    /* min-width: 915.5916px; */
-    /* max-width: 915.5916px; */
-
     width: 858.33px;
-    /* max-width: 800px; */
-    /* width: 915.5916px; */
     height: 300px;
-
-    /* margin: 20px 0 50px 0; */
     margin: 20px 0 70px 0;
 }
 
@@ -21,50 +11,25 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-
-    /* width: 45%; */
     width: 48%;
-
-    /* background-color: blue; */
-    /* box-shadow: 0px 0px 21px -2px #000000; */
     box-shadow: 0px 0px 21px -2px rgba(0,0,0,0.83);
 }
 
-
-
 .portfolio-panel-img-bot-wrapper {
-    /* height: 12%; */
-    /* height: 36px; */
     height: 35px;
-
     display: flex;
     flex-direction: row;
     align-items: center;
-
     justify-content: space-between;
-    /* margin-top: auto; */
     background-color: rgba(31, 31, 31, 0.37)
 }
 
-
-
 .portfolio-panel-img {
-    /* width: 100%; */
-    /* flex: 1 1; */
-    /* min-width: 40%; */
-    /* width: 45%; */
     width: 100%;
     object-fit: contain;
-    /* max-height: 88%; */
-    /* max-height: 88.33333%; */
     height:  88.33333%;
-
     flex-grow: 1;
     box-sizing: border-box;
-    /* border: 5px solid white; */
-    /* border: 10px ridge #1C6EA4; */
-    /* border: 10px ridge rgb(6, 73, 117); */
-    /* border: 10px ridge rgb(129, 4, 4); */
     background-color: black;
     cursor: pointer;
 }
@@ -73,7 +38,6 @@
     opacity: .3;
     background-color: grey;
     cursor: pointer;
-    /* vertical-align: middle; */
 }
 
 .portfolio-nav-arrow:hover {
@@ -81,17 +45,9 @@
 }
 
 .portfolio-info-container {
-    /* width: 45%; */
     width: 48%;
-    /* border: 1px solid red; */
-    /* box-shadow: 0px 0px 21px 2px #000000; */
     box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.83);
-    
     box-sizing: border-box;
-    /* border: 10px ridge #1C6EA4; */
-    /* border: 10px ridge rgb(6, 73, 117); */
-    /* padding-left: .5%;
-    padding-right: .5%; */
     padding-left: .2%;
     padding-right: .2%;
 }
@@ -114,12 +70,6 @@
 .portfolio-info-desc {
     font-weight: 400;
     font-size: 17px;
-    /* font-size: 16px; */
-    /* font-size: 1em; */
-}
-
-.portfolio-panel-img-title {
-
 }
 
 .portfolio-panel-img-fs-container {
@@ -129,51 +79,28 @@
     width: 100%;
     background-color: rgba(100, 100, 100, 0.9);
     z-index: 100;
-    /* opacity: .6; */
     padding-top: 10px;
     padding-bottom: 10px;
     box-sizing: border-box;
     border: 6px solid darkgrey;
     border-radius: 12px;
-    /* height: 100%; */
-
-    /* max-height: 100%; */
-
-    /* height: 100rem; */
-    /* height: 650.25px; */
-    /* max-height: 500px; */
 }
 
 .portfolio-panel-img-fs {
-    /* width: 90%; */
     max-width: 90%;
-    /* max-height: 100%; */
-    /* max-height: 700px; */
-    /* max-height: inherit; */
-    /* position: relative; */
- 
-    /* z-index: 100; */
-
-    /* object-fit: contain; */
-    /* height: inherit; */
-    /* height: auto; */
-    /* width: auto; */
     cursor: pointer;
 }
 
 .portfolio-panel-img-fs-btn-close {
-    /* float: left; */
     top: 0;
     right: 0;
     position: absolute;
     padding: 7px 7px 7px 7px;
-    /* background: rgb(211, 211, 211); */
     background: white;
     opacity: .6;
     color: black;
     border-radius: 5px;
     border: 2px solid orange;
-    /* border-radius: 15px; */
     cursor: pointer;
 }
 
@@ -195,7 +122,6 @@
         flex-direction: column;
         min-width: auto;
         max-width: 414px;
-        /* height: 600px; */
         height: 600px;
         width: 414px;
         margin-bottom: 40px;
@@ -204,16 +130,12 @@
     .portfolio-panel-img-container {
         height: 300px;
         width: 414px;
-        /* align-self: center; */
         align-content: center;
-        
     }
 
     .portfolio-info-container {
         width: 414px;
         height: 300px;
-        /* align-self: center; */
-        /* box-shadow: 0px 7px 21px 2px rgba(0,0,0,0.53); */
     }
 
     .p-shadow-top {

@@ -7,9 +7,8 @@ const PokemonGS = ({}) => {
     const [image] = useState({
         src: PokemonImg,
         alt: 'Pokemon Gold & Silver'
-    })
+    });
     const [description] = useState(
-        // 'Red and Blue was where it started, but GS was where the game truly took off.' +
         ' As the sequel to the popular Gameboy games, Pokemon Red Version and Pokemon Blue Version,' +
         ' no one had any idea where the series was headed, but boy did this sequel deliver.' +
         ' Not only did it include everything from its predecessor, it also added even more content on top of it.' +
@@ -29,7 +28,6 @@ const PokemonGS = ({}) => {
         fontFamily: 'mason serif'
     };
     
-
     return (
         <GamePanel
             image={image}

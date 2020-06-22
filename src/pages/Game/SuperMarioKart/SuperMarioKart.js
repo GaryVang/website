@@ -7,7 +7,7 @@ const SuperMarioKart = ({}) => {
     const [image] = useState({
         src: MarioKartImg,
         alt: 'Super Mario Kart'
-    })
+    });
     const [description] = useState(
         'This is Nintendo\'s racing game, but unlike your standard racing game,' +
         ' it comes with a twist—you can pick up random items that can be used to sabotage' +
@@ -27,7 +27,6 @@ const SuperMarioKart = ({}) => {
         color: 'black',
         fontFamily: 'mason serif'
     };
-    
 
     return (
         <GamePanel

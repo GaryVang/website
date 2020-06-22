@@ -1,24 +1,7 @@
 .about-container {
-    /* font-family: Arial, Helvetica, sans-serif; */
     margin:0;
-    /* background-image: url("bg-trees.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-
-    /* height: 100%; */
-    /* background-size: cover; */
-    /* filter: blur(1px); */
-    /* -webkit-filter: blur(8px); */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-content: center; */
-    /* align-items: center; */
-}
-
-.about-header {
-    /* color: white; */
-    /* margin: 0; */
 }
 
 .about-sect {
@@ -28,8 +11,6 @@
 }
 
 .about-sect-art {
-    /* background: black; */
-    /* background-color: rgba(0,0,0, 0.4); */
     background-color: rgba(0,0,0, 0.8);
     color: white;
     border: 3px solid #f1f1f1;
@@ -37,25 +18,18 @@
     flex-direction: row;
     height: 265px;
     justify-content: space-around;
-    /* align-content: space-between; */
     width: 90%;
-    /* margin: 10px 0 10px 0; */
     padding: 10px 0 10px 0;
 }
 
 .about-sect-art-img {
-    /* width: 50%; */
     height: 100%;
-    /* margin: 10px 0 10px 0; */
 }
 
 .about-seperator {
-    /* width: 100%; */
     display: block;
     height: 1px;
     border: 0;
-    /* border-top: 1px solid #ccc; */
-    /* border-top: 1px solid black; */
     margin: 1em 30px 1em 30px;
     padding: 0;
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './FavoriteList.css';
+
 import Witcher3 from './Witcher3/Witcher3';
-// import * as sayBye from './Witcher3/Witcher3'; // Remove after tests
 import PokemonGS from './Pokemon/Pokemon';
 import Bioshock from './Bioshock/Bioshock';
 import SuperMarioKart from './SuperMarioKart/SuperMarioKart';
@@ -18,19 +18,16 @@ const FavoriteList = ({}) => {
         }, 200);
         return () => clearTimeout(timer);
     }, [visible]);
-    // const [gameList] = useState([<Witcher3/>, <PokemonGS/>]);
+    
     const [gameList] = useState([Witcher3, PokemonGS, Bioshock, SuperMarioKart]);
     const [count, setCount] = useState(0);
-    
 
     const renderGame = () => {
-        // return gameList[count];
         let Component = gameList[count];
         return <Component/>;
-    }
+    };
 
     const handleLeftArrow = () => {
-        // sayBye.sayBye();
         setVisible(false);
         setTimeout(() => {
             if(count-1 < 0) {
@@ -42,7 +39,6 @@ const FavoriteList = ({}) => {
     };
 
     const handleRightArrow = () => {
-        // sayBye.resetBye();
         setVisible(false);
         setTimeout(() => {
             if(count+1 === gameList.length){
@@ -60,7 +56,6 @@ const FavoriteList = ({}) => {
                 <NavigateBeforeIcon className='favorite-nav-arrow' fontSize='large' onClick={handleLeftArrow} />
                 <NavigateNextIcon className='favorite-nav-arrow' fontSize='large' onClick={handleRightArrow} />
             </div>
-            
         </div>
     );
 };

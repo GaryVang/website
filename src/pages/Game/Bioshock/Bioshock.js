@@ -8,7 +8,7 @@ const Bioshock = ({}) => {
     const [image] = useState({
         src: BioshockImgBD,
         alt: 'Bioshock'
-    })
+    });
     const [description] = useState(
         'I received this game as a Christmas present, but at the time, I wasn\'t too fond of' +
         ' horror games, so I shelved it for 6-12 months without even opening the case.' +
@@ -25,14 +25,11 @@ const Bioshock = ({}) => {
     );
 
     const style = {
-        // backgroundColor: 'lightblue',
         background: 'linear-gradient(0deg, rgba(21,141,167,1) 0%, rgba(118,232,255,1) 100%)',
-        // background: 'linear-gradient(344deg, rgba(0,97,176,1) 0%, rgba(0,175,210,1) 100%)',
         color: 'black',
         fontFamily: 'mason serif'
     };
     
-
     return (
         <GamePanel
             image={image}

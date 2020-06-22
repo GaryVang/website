@@ -8,7 +8,6 @@ const AboutPanel = ({ image, description}) => {
                 <img className='about-panel-img' src={image.src} alt={image.alt} />
             </div>
             <div className='about-panel-desc-container'>
-                {/* <p>Hello There</p> */}
                 <p>{description}</p>
             </div>
         </section>

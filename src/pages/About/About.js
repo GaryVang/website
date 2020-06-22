@@ -19,12 +19,6 @@ const About = ({ darkTheme }) => {
             <ICPC />
             <hr className={darkTheme ? 'about-seperator dark' : 'about-seperator light'}/>
             <Camping />
-            {/* <section className='about-sect'>
-                <article className='about-sect-art'>
-                    <img className='about-sect-art-img' src={BGTrees} alt='Trees' />
-                    <p>Hello There</p>
-                </article>
-            </section> */}
         </section>
     );
 };
