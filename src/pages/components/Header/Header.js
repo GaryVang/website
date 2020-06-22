@@ -1,6 +1,4 @@
-import React from 'react';
-const Header = ({}) => {
-
-};
+import React from "react";
+const Header = ({}) => {};
 
 export default Header;
