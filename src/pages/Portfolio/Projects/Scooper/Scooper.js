@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import PortfolioPanel from '../../PortfolioPanel';
-import WitcherImg from '../FFBE/ffbe-tmp-w3.png';
+
 import UMLImg from './UML-Diagram.png';
 import ScoopImgGameplay from './scoop_gameplay.png';
 import ScoopImgInitial from './scoop_initial-view.png';
 
-const Scooper = ({ id }) => {
+const Scooper = ({ id, darkTheme }) => {
     const [title] = useState(
         '2D Scoop Game'
     );
@@ -49,6 +49,7 @@ const Scooper = ({ id }) => {
             description={description}
             techStack={techStack}
             style={style}
+            darkTheme={darkTheme}
         />
     );
 };

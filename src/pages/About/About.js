@@ -1,24 +1,23 @@
 import React from 'react';
 import './About.css';
-import BGTrees from './bg-trees.jpg';
 
 import ACM from './Articles/ACM/ACM';
 import Camping from './Articles/Camping/Camping';
 import Cycling from './Articles/Cycling/Cycling';
 import ICPC from './Articles/ICPC/ICPC';
 
-const About = ({}) => {
+const About = ({ darkTheme }) => {
     return (
         <section className='about-container'>
             <header>
                 <h2 className='about-header'>About Me</h2>
             </header>
             <Cycling />
-            <hr className='about-seperator'/>
+            <hr className={darkTheme ? 'about-seperator dark' : 'about-seperator light'}/>
             <ACM />
-            <hr className='about-seperator'/>
+            <hr className={darkTheme ? 'about-seperator dark' : 'about-seperator light'}/>
             <ICPC />
-            <hr className='about-seperator'/>
+            <hr className={darkTheme ? 'about-seperator dark' : 'about-seperator light'}/>
             <Camping />
             {/* <section className='about-sect'>
                 <article className='about-sect-art'>

@@ -5,6 +5,10 @@
     /* overflow: hidden; */
 }
 
+.portfolio-container h2 {
+    margin-bottom: 0;
+}
+
 /* .portfolio-header {
     font-size: 30px;
 } */

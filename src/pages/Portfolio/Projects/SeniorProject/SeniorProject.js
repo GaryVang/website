@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import PortfolioPanel from '../../PortfolioPanel';
-import WitcherImg from '../FFBE/ffbe-tmp-w3.png';
 
-const SeniorProject = ({ id }) => {
+import SCIPImg from './scip.png';
+
+const SeniorProject = ({ id, darkTheme }) => {
     const [title] = useState('Member Database Management System');
     const [image] = useState([
         {
-            src: WitcherImg,
-            alt: 'No image so here\'s Geralt (prob change)'
+            src: SCIPImg,
+            alt: 'Sheriff\'s Community Impact Program'
         }
     ]);
     const [link] = useState([
@@ -40,6 +41,7 @@ const SeniorProject = ({ id }) => {
             description={description}
             techStack={techStack}
             style={style}
+            darkTheme={darkTheme}
         />
     );
 };

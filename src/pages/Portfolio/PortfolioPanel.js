@@ -5,7 +5,7 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import CloseIcon from '@material-ui/icons/Close';
 
-const PortfolioPanel = ({ id, image, title, description, link, style, techStack }) => {
+const PortfolioPanel = ({ id, image, title, description, link, style, techStack, darkTheme }) => {
 
     const [imgIndex, setImgIndex] = useState(0);
     const [imgFullScreen, setImgFullScreen] = useState(false);
@@ -41,7 +41,8 @@ const PortfolioPanel = ({ id, image, title, description, link, style, techStack 
     const renderLinks = () => {
         return link.map(link => 
             <div>
-                <a className='portfolio-info-link' href={link.url}>{link.title}</a>
+                {/* <a className="portfolio-info-link" href={link.url}>{link.title}</a> */}
+                <a className={darkTheme ? 'portfolio-info-link dark-link' : 'portfolio-info-link light-link'} href={link.url}>{link.title}</a>
                 {link.note ? <span className='portfolio-info-link-note'> {link.note}</span>: null}
             </div>
         );

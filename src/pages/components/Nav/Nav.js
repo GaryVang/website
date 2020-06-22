@@ -52,10 +52,10 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
                 <GameIcon className='nav-icon' fontSize='inherit'/>
                 Games
             </NavLink>
-            <NavLink exact to='/speedrun' activeClassName='nav-active' className='nav-tab'>
+            {/* <NavLink exact to='/speedrun' activeClassName='nav-active' className='nav-tab'>
                 <TimerIcon className='nav-icon' fontSize='inherit'/>
                 Speedrun
-            </NavLink>
+            </NavLink> */}
             <NavLink exact to='/about' activeClassName='nav-active' className='nav-tab'>
                 About Me
             </NavLink>
@@ -87,10 +87,10 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
                 <GameIcon className='nav-icon' fontSize='inherit'/>
                 Games
             </NavLink>
-            <NavLink exact to='/speedrun' activeClassName='nav-active' className='nav-tab'>
+            {/* <NavLink exact to='/speedrun' activeClassName='nav-active' className='nav-tab'>
                 <TimerIcon className='nav-icon' fontSize='inherit'/>
                 Speedrun
-            </NavLink>
+            </NavLink> */}
             <NavLink exact to='/about' activeClassName='nav-active' className='nav-tab'>
                 About Me
             </NavLink>

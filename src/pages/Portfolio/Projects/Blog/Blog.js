@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import PortfolioPanel from '../../PortfolioPanel';
-import WitcherImg from '../FFBE/ffbe-tmp-w3.png';
+
 import BlogImgHome from './blog_home.png';
 import BlogImgSignup from './blog_signup.png';
 
-const Blog = ({ id }) => {
+const Blog = ({ id, darkTheme }) => {
     const [title] = useState('Blog Template');
     const [image] = useState([
         {
@@ -20,7 +20,7 @@ const Blog = ({ id }) => {
         {
             url: 'https://blog-template-v.herokuapp.com/',
             title: 'Website',
-            note:  '*Wait a few secs for the server to wake up'
+            note:  '*Server takes a few seconds to wake up'
         },
         {
             url: 'https://github.com/GaryVang/blog-new-template',
@@ -48,6 +48,7 @@ const Blog = ({ id }) => {
             description={description}
             techStack={techStack}
             style={style}
+            darkTheme={darkTheme}
         />
     );
 };

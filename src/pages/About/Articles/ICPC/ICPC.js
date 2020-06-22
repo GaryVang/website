@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import AboutPanel from '../../AboutPanel';
-import TestImg from '../tmp-w3.png';
 
+// import ICPCImg from './icpc.jpg';
+import ICPCImg from '../../../Game/Witcher3/witcher_3.jpg';
 
 const ICPC = ({ id }) => {
-    const [title] = useState('Final Fantasy Brave Exvius Party Builder Tool');
+    const [title] = useState('ICPC');
     const [image] = useState(
         {
-            src: TestImg,
-            alt: 'Initial View'
+            src: ICPCImg,
+            alt: 'ICPC'
         }
-        
     );
     // const [link] = useState([
     //     { 

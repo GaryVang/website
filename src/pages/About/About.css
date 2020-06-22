@@ -55,7 +55,15 @@
     height: 1px;
     border: 0;
     /* border-top: 1px solid #ccc; */
-    border-top: 1px solid black;
+    /* border-top: 1px solid black; */
     margin: 1em 30px 1em 30px;
     padding: 0;
+}
+
+.light {
+    border-top: 1px solid black;
+}
+
+.dark {
+    border-top: 1px solid lightgrey;
 }

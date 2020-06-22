@@ -5,7 +5,7 @@ import SeniorProj from './Projects/SeniorProject/SeniorProject';
 import Scooper from './Projects/Scooper/Scooper';
 import './PortfolioList.css';
 
-const PortfolioList = ({}) => {
+const PortfolioList = ({ darkTheme }) => {
 
     const [portfolioList] = useState([FFBE, Scooper, SeniorProj, Blog]);
 
@@ -23,7 +23,7 @@ const PortfolioList = ({}) => {
        return portfolioList.map((Project, index)=> {
             return (
                 <React.Fragment>
-                    <Project key={index} id={index+1}/>
+                    <Project key={index} id={index+1} darkTheme={darkTheme}/>
                 </React.Fragment>
             );
         });

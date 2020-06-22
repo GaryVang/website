@@ -23,6 +23,7 @@
 
 .home-section-1-header {
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .home-avatar-container {
@@ -33,6 +34,7 @@
 
 .home-avatar {
     /* width: 48%; */
+    max-width: 292px;
     width: 99%;
     margin-left: .5%;
     margin-right: .5%;
@@ -44,6 +46,10 @@
     width: 100%;
     /* margin-left: 1%; */
     /* margin-right: 1%; */
+}
+
+.home-section-1-text {
+    margin-top: 10px;
 }
 
 .home-section-1-text-contact-container {
@@ -61,6 +67,8 @@
 
 .home-section-1-text-contact-container h5 {
     width: 145px;
+    width: 285px;
+    /* width: 400px; */
     /* display: flex;
     flex-direction: row;
     justify-content: flex-start; */
@@ -79,12 +87,13 @@
     font-weight: 400;
     /* color: rgb(62, 166, 255); */
     color: rgb(6, 95, 212);
+    text-decoration: none;
 }
 
 .dark-link {
     font-weight: 400;
     color: rgb(62, 166, 255);
-    /* color: red; */
+    text-decoration: none;
 }
 
 

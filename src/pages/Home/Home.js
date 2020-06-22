@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Home.css';
-import TempImg from '../Game/Witcher3/witcher_3.jpg';
+
+import AvatarImg from '../Game/Witcher3/witcher_3.jpg';
+// import AvatarImg from './avatar.jpg';
 
 const Home = ({ darkTheme }) => {
     console.log('theme: ', darkTheme);
@@ -11,17 +13,17 @@ const Home = ({ darkTheme }) => {
                 <h2 className='home-header'>Welcome,</h2>
             </header>
             <section className='home-section-1-container'>
-                <h2 className='home-section-1-header'>I am G</h2>
+                <h2 className='home-section-1-header'>I am Gary Vang</h2>
                 <div className='home-avatar-container'>
-                    <img className='home-avatar' src={TempImg} alt='home-avatar'/>
+                    <img className='home-avatar' src={AvatarImg} alt='home-avatar'/>
                 </div>
                 <div className='home-section-1-text-container'>
                     {/* <h2>I am G</h2> */}
-                    <h4>And I'm a Developer, Gamer, and an occasional Cyclist</h4>
+                    <h4 className='home-section-1-text'>And I'm a Developer, Gamer, and an occasional Cyclist</h4>
                     <div className='home-section-1-text-contact-container'>
-                        <h5>Email: <span className='fw-normal'>email@email.com</span></h5>
-                        <h5>LinkedIn: <span className={!darkTheme ? 'light-link' : 'dark-link'}>://LinkedIn</span></h5>
-                        <h5>GitHub: <span className={!darkTheme ? 'light-link' : 'dark-link'}>https://github.com/GaryVang</span></h5>
+                        <h5>Email: <span className='fw-normal'>GaryLVang@gmail.com</span></h5>
+                        <h5>LinkedIn: <a href='https://www.linkedin.com/in/garyvang/' className={!darkTheme ? 'light-link' : 'dark-link'}>https://www.linkedin.com/in/garyvang/</a></h5>
+                        <h5>GitHub: <a href='https://github.com/GaryVang' className={!darkTheme ? 'light-link' : 'dark-link'}>https://github.com/GaryVang</a></h5>
                     </div>
                 </div>
             </section>
