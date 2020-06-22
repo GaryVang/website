@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import AboutPanel from '../../AboutPanel';
 
-// import ICPCImg from './icpc.jpg';
-import ICPCImg from '../../../Game/Witcher3/witcher_3.jpg';
+import ICPCImg from './icpc.jpg';
+// import ICPCImg from '../../../Game/Witcher3/witcher_3.jpg';
 
 const ICPC = ({}) => {
     const [title] = useState('ICPC');

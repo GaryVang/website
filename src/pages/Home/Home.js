@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.css";
 
-import AvatarImg from "../Game/Witcher3/witcher_3.jpg";
-// import AvatarImg from './avatar.jpg';
+// import AvatarImg from "../Game/Witcher3/witcher_3.jpg";
+import AvatarImg from './avatar.jpg';
 
 const Home = ({ darkTheme }) => {
   return (

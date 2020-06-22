@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import AboutPanel from '../../AboutPanel';
 
-import ACMImg from '../../../Game/Witcher3/witcher_3.jpg';
-// import ACMImg from './acm.jpg';
+// import ACMImg from '../../../Game/Witcher3/witcher_3.jpg';
+import ACMImg from './acm.jpg';
 
 
 const ACM = ({}) => {

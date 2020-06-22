@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import AboutPanel from '../../AboutPanel';
 
-// import CyclingImg from './cycling.jpg';
-import CyclingImg from '../../../Game/Witcher3/witcher_3.jpg';
+import CyclingImg from './cycling.jpg';
+// import CyclingImg from '../../../Game/Witcher3/witcher_3.jpg';
 
 
 const Cycling = ({}) => {
