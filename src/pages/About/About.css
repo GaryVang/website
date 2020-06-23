@@ -26,7 +26,7 @@
     height: 100%;
 }
 
-.about-seperator {
+.about-separator {
     display: block;
     height: 1px;
     border: 0;
@@ -34,10 +34,10 @@
     padding: 0;
 }
 
-.seperator-light {
+.separator-light {
     border-top: 1px solid black;
 }
 
-.seperator-dark {
+.separator-dark {
     border-top: 1px solid lightgrey;
 }

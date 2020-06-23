@@ -14,15 +14,15 @@ const About = ({ darkTheme }) => {
       </header>
       <Cycling />
       <hr
-        className={darkTheme ? "about-seperator seperator-dark" : "about-seperator seperator-light"}
+        className={darkTheme ? "about-separator separator-dark" : "about-separator separator-light"}
       />
       <ACM />
       <hr
-        className={darkTheme ? "about-seperator seperator-dark" : "about-seperator seperator-light"}
+        className={darkTheme ? "about-separator separator-dark" : "about-separator separator-light"}
       />
       <ICPC />
       <hr
-        className={darkTheme ? "about-seperator seperator-dark" : "about-seperator seperator-light"}
+        className={darkTheme ? "about-separator separator-dark" : "about-separator separator-light"}
       />
       <Camping />
     </section>
