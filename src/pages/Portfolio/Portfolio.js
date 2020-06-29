@@ -4,10 +4,10 @@ import "./Portfolio.css";
 
 const Portfolio = ({ darkTheme }) => {
   return (
-    <div className="portfolio-container">
+    <section className="portfolio-container">
       <h2 className="portfolio-header">My Portfolio</h2>
       <PortfolioList darkTheme={darkTheme} />
-    </div>
+    </section>
   );
 };
 

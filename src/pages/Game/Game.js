@@ -4,10 +4,10 @@ import FavoriteList from "./FavoriteList";
 
 const Game = ({}) => {
   return (
-    <div className="game-container">
+    <section className="game-container">
       <h2 className="game-header">A List of My Favorite Video Games</h2>
       <FavoriteList />
-    </div>
+    </section>
   );
 };
 

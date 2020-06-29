@@ -52,6 +52,16 @@
     padding-right: .2%;
 }
 
+.portfolio-info-title {
+    font-size: 32px;
+    margin-top: 21.44px;
+    margin-bottom: 21.44px;
+
+    /* font-size: 24px; */
+    /* margin-top: 26.56px;
+    margin-bottom: 26.56px; */ 
+}
+
 .portfolio-info-link {
     text-decoration: none;
     color: rgb(62, 166, 255);

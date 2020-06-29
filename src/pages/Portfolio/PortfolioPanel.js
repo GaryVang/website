@@ -64,7 +64,7 @@ const PortfolioPanel = ({
   const renderPortfolio = () => {
     if (id % 2 === 1) {
       return (
-        <div className="portfolio-panel-container" style={style}>
+        <article className="portfolio-panel-container" style={style}>
           <div className="portfolio-panel-img-container p-shadow-top">
             <img
               className="portfolio-panel-img"
@@ -89,7 +89,7 @@ const PortfolioPanel = ({
             </div>
           </div>
           <div className="portfolio-info-container p-shadow-bot">
-            <h1>{title}</h1>
+            <h1 className='portfolio-info-title'>{title}</h1>
             <h4> {renderLinks()}</h4>
             <h4>
               Tech Stack:{" "}
@@ -111,13 +111,13 @@ const PortfolioPanel = ({
               />
             </div>
           ) : null}
-        </div>
+        </article>
       );
     } else {
       return (
-        <div className="portfolio-panel-container">
+        <article className="portfolio-panel-container">
           <div className="portfolio-info-container p-shadow-top" style={style}>
-            <h1>{title}</h1>
+            <h1 className='portfolio-info-title'>{title}</h1>
             <h4>{renderLinks()}</h4>
             <h4>
               Tech Stack:{" "}
@@ -163,7 +163,7 @@ const PortfolioPanel = ({
               />
             </div>
           ) : null}
-        </div>
+        </article>
       );
     }
   };
