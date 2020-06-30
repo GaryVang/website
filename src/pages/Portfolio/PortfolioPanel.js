@@ -90,8 +90,8 @@ const PortfolioPanel = ({
           </div>
           <div className="portfolio-info-container p-shadow-bot">
             <h1 className='portfolio-info-title'>{title}</h1>
-            <h4> {renderLinks()}</h4>
-            <h4>
+            <h4 className='portfolio-info-link-wrapper'> {renderLinks()}</h4>
+            <h4 className='portfolio-info-tech-wrapper'>
               Tech Stack:{" "}
               <span className="portfolio-info-tech">{techStack}</span>
             </h4>
@@ -118,8 +118,8 @@ const PortfolioPanel = ({
         <article className="portfolio-panel-container">
           <div className="portfolio-info-container p-shadow-top" style={style}>
             <h1 className='portfolio-info-title'>{title}</h1>
-            <h4>{renderLinks()}</h4>
-            <h4>
+            <h4 className='portfolio-info-link-wrapper'>{renderLinks()}</h4>
+            <h4 className='portfolio-info-tech-wrapper'>
               Tech Stack:{" "}
               <span className="portfolio-info-tech">{techStack}</span>
             </h4>

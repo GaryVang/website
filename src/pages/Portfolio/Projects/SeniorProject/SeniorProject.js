@@ -20,7 +20,8 @@ const SeniorProject = ({ id, darkTheme }) => {
   const [techStack] = useState("Microsoft Access, VBA, Microsoft SQL");
   const [description] = useState(
     "A database management system built by a team of 5 for the Sacramento Sheriff's" +
-      " Community Impact Program (SCIP)." +
+      " Community Impact Program (SCIP) over the course of a year." +
+      "\n\nIn addition to being an equal contributor to all stages of the SDLC process," +
       " I was responsible for the Program Management Feature which allowed users to" +
       " create and manage their events."
   );

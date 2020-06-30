@@ -29,7 +29,10 @@ const Scooper = ({ id, darkTheme }) => {
   ]);
   const [techStack] = useState("Java");
   const [description] = useState(
-    "A 2D game designed using object-oriented programming (OOP) and utilizing multiple design patterns: MVC, Command, Singleton, Factory, etc."
+    "A 2D game designed using object-oriented programming (OOP) and" +
+    " utilizing multiple design patterns: MVC, Command, Singleton, Factory, etc." +
+    "\n\nShapes represent interactable game objects. The game can be played using" +
+    " the keyboard or graphical user interface."
   );
 
   const style = {

@@ -51,7 +51,11 @@ const FFBE = ({ id, darkTheme }) => {
     "React, Javascript, Node JS, Express, PostgreSQL"
   );
   const [description] = useState(
-    "A single-page application (SPA) tool for organizing thoughts and strategies. Just simply search for a unit and start gearing for your next boss fight!"
+    "A single-page application (SPA) tool for organizing thoughts and strategies." +
+    // " Just simply search for a unit and start gearing for your next boss fight!" +
+    " It has a Front End, Back End, and an API to handle requests. Additionally, it is accompanied by a" +
+    " Data Scraping Tool that can update the database and provide a more readable" +
+    " version of the game data."
   );
 
   const style = {
