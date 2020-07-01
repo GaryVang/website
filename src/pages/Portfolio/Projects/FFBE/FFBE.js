@@ -48,7 +48,7 @@ const FFBE = ({ id, darkTheme }) => {
     },
   ]);
   const [techStack] = useState(
-    "React, Javascript, Node JS, Express, PostgreSQL"
+    "React, Javascript, Node.JS, Express, PostgreSQL, Git, HTML, CSS"
   );
   const [description] = useState(
     "A single-page application (SPA) tool for organizing thoughts and strategies." +

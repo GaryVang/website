@@ -82,6 +82,7 @@
 
 .portfolio-info-tech-wrapper {
     margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 .portfolio-info-tech {
@@ -92,6 +93,7 @@
     font-weight: 400;
     font-size: 17px;
     white-space: pre-wrap;
+    margin: 0;
 }
 
 .portfolio-panel-img-fs-container {
