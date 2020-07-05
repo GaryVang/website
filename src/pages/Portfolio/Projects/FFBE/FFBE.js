@@ -46,15 +46,21 @@ const FFBE = ({ id, darkTheme }) => {
       url: "https://github.com/GaryVang/ffbe-party-builder",
       title: "GitHub Repo",
     },
+    {
+      url: "https://github.com/GaryVang/ffbe-data-scraper",
+      title: "Data Scraper Repo"
+    }
   ]);
   const [techStack] = useState(
-    "React, Javascript, Node.JS, Express, PostgreSQL, Git, HTML, CSS"
+    "React, Javascript, Node.js, Express, PostgreSQL, Git, HTML, CSS"
   );
   const [description] = useState(
-    "A single-page application (SPA) tool for organizing thoughts and strategies." +
-    // " Just simply search for a unit and start gearing for your next boss fight!" +
-    " It has a Front End, Back End, and an API to handle requests. Additionally, it is accompanied by a" +
-    " Data Scraping Tool that can update the database and provide a more readable" +
+    "A single-page application (SPA) developed to assist players in organizing their thoughts and strategies." +
+    "\n\nThe front-end is developed in React (v16.13) using a combination of functional and class components," +
+    " the back-end using PostgreSQL," +
+    " and the RESTful API using Node.js with the Express framework." +
+    "\n\nAdditionally, I developed a" +
+    " Data Scraping Tool designed to update the database and provide a more readable" +
     " version of the game data."
   );
 

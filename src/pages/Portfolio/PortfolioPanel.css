@@ -50,6 +50,9 @@
     box-sizing: border-box;
     padding-left: .2%;
     padding-right: .2%;
+    
+    overflow: auto;
+    scrollbar-width: thin;
 }
 
 .portfolio-info-title {
