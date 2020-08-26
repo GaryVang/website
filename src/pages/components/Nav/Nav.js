@@ -52,7 +52,8 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
                 <BlogIcon className='nav-icon' fontSize='inherit'/>
                 Blog
             </NavLink> */}
-        <NavLink
+
+        {/* <NavLink
           exact
           to="/game"
           activeClassName="nav-active"
@@ -60,7 +61,8 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
         >
           <GameIcon className="nav-icon" fontSize="inherit" />
           Games
-        </NavLink>
+        </NavLink> */}
+        
         {/* <NavLink exact to='/speedrun' activeClassName='nav-active' className='nav-tab'>
                 <TimerIcon className='nav-icon' fontSize='inherit'/>
                 Speedrun
@@ -113,7 +115,8 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
                 <BlogIcon className='nav-icon' fontSize='inherit'/>
                 Blog
             </NavLink> */}
-        <NavLink
+
+        {/* <NavLink
           exact
           to="/game"
           activeClassName="nav-active"
@@ -121,7 +124,8 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
         >
           <GameIcon className="nav-icon" fontSize="inherit" />
           Games
-        </NavLink>
+        </NavLink> */}
+
         {/* <NavLink exact to='/speedrun' activeClassName='nav-active' className='nav-tab'>
                 <TimerIcon className='nav-icon' fontSize='inherit'/>
                 Speedrun
