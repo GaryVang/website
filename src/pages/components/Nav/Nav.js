@@ -31,7 +31,8 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
     setThemeFocus(false);
     setOnHover(false);
   };
-
+ 
+  
   const renderNav = () => {
     return !darkTheme ? (
       <nav className="nav-container light">
