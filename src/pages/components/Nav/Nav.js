@@ -130,6 +130,8 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
                 <TimerIcon className='nav-icon' fontSize='inherit'/>
                 Speedrun
             </NavLink> */}
+
+            
         <NavLink
           exact
           to="/about"
