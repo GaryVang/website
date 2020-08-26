@@ -88,9 +88,10 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
           onMouseEnter={onThemeHover}
           onMouseLeave={onThemeMouseLeave}
         />
-        {themeFocus ? (
+        {/* Disabled Pending Fix */}
+        {/* {themeFocus ? (
           <h4 className="theme-toggle-label-light">Toggle Dark Theme</h4>
-        ) : null}
+        ) : null} */}
       </nav>
     ) : (
       <nav className="nav-container dark">
@@ -153,9 +154,10 @@ const Nav = ({ darkTheme, changeToLight, changeToDark }) => {
           onMouseEnter={onThemeHover}
           onMouseLeave={onThemeMouseLeave}
         />
-        {themeFocus ? (
+        {/* Disabled Pending Fix */}
+        {/* {themeFocus ? (
           <h4 className="theme-toggle-label-dark">Toggle Light Theme</h4>
-        ) : null}
+        ) : null} */}
       </nav>
     );
   };
