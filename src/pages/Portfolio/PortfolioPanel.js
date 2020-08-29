@@ -51,6 +51,8 @@ const PortfolioPanel = ({
               : "portfolio-info-link light-link"
           }
           href={link.url}
+          target='_blank'
+          rel='noopener noreferrer'
         >
           {link.title}
         </a>

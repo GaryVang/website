@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 
 // import AvatarImg from "../Game/Witcher3/witcher_3.jpg";
-import AvatarImg from './avatar.jpg';
+import AvatarImg from "./avatar.jpg";
 
 const Home = ({ darkTheme }) => {
   return (
@@ -28,6 +28,8 @@ const Home = ({ darkTheme }) => {
               <a
                 href="https://www.linkedin.com/in/garyvang/"
                 className={!darkTheme ? "light-link" : "dark-link"}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 https://www.linkedin.com/in/garyvang/
               </a>
@@ -37,6 +39,8 @@ const Home = ({ darkTheme }) => {
               <a
                 href="https://github.com/GaryVang"
                 className={!darkTheme ? "light-link" : "dark-link"}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 https://github.com/GaryVang
               </a>
