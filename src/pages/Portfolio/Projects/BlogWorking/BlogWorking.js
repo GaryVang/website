@@ -38,7 +38,7 @@ const Blog = ({ id, darkTheme }) => {
       note: "*Server takes a few seconds to wake up",
     },
     {
-      url: "https://github.com/GaryVang/blog-refactor",
+      url: "https://github.com/GaryVang/blog",
       title: "GitHub Repo",
     },
   ]);
