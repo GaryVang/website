@@ -26,4 +26,7 @@
     align-items: center;
     white-space: pre-wrap;
     /* color: rgb(54, 54, 54); */
+
+    line-height: 1.625em;
+    font-size: 16px;
 }
