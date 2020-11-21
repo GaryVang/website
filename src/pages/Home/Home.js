@@ -1,4 +1,7 @@
 import React from "react";
+
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import "./Home.css";
 
 // import AvatarImg from "../Game/Witcher3/witcher_3.jpg";
@@ -23,7 +26,7 @@ const Home = ({ darkTheme }) => {
             <h5>
               Email: <span className="fw-normal">GaryLVang@gmail.com</span>
             </h5>
-            <h5>
+            {/* <h5 className='test-3'>
               LinkedIn:{" "}
               <a
                 href="https://www.linkedin.com/in/garyvang/"
@@ -43,6 +46,25 @@ const Home = ({ darkTheme }) => {
                 rel="noopener noreferrer"
               >
                 https://github.com/GaryVang
+              </a>
+            </h5> */}
+            <h5 className='test-3'>
+              <a
+                href="https://www.linkedin.com/in/garyvang/"
+                className={!darkTheme ? "light-link" : "dark-link"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedInIcon className='link-icon icon-linkedin' style={{fontSize: '32px'}} />
+              </a>
+              <a
+                href="https://github.com/GaryVang"
+                className={!darkTheme ? "light-link" : "dark-link"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* <GitHubIcon className='link-icon icon-github' style={{fontSize: '28px'}} /> */}
+                <GitHubIcon className={'link-icon ' + (!darkTheme ? "icon-github-dark" : "icon-github-light")} style={{fontSize: '28px'}} />
               </a>
             </h5>
           </div>
