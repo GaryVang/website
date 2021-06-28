@@ -6,7 +6,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import Blog from "./pages/Blog/Blog";
 import About from "./pages/About/About";
 import Speedrun from "./pages/Speedrun/Speedrun";
-import Game from "./pages/Game/Game";
+// import Game from "./pages/Game/Game";
 import PageNotFound from "./pages/404/404";
 import Nav from "./pages/components/Nav/Nav";
 // import Login from './pages/Login/Login';
@@ -68,7 +68,7 @@ function App() {
             />
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/speedrun" component={Speedrun} />
-            <Route exact path="/game" component={Game} />
+            {/* <Route exact path="/game" component={Game} /> */}
             {/* <Route exact path='/portfolio' component={Portfolio} /> */}
             <Route
               exact
