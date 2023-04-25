@@ -38,7 +38,8 @@ const FFBE = ({ id, darkTheme }) => {
   ]);
   const [link] = useState([
     {
-      url: "https://ffbe-builder-v.herokuapp.com/",
+//       url: "https://ffbe-builder-v.herokuapp.com/",
+      url: "https://ffbe-builder.onrender.com/",
       title: "Website",
       note: "*Server takes a few seconds to wake up",
     },
